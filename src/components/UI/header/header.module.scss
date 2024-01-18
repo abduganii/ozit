@@ -1,0 +1,42 @@
+.Header {
+    width: 100%;
+    background-color: #F8F8F9;
+    padding: 14px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &__container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    &__logo {
+        color: var(--2454FF, #2454FF);
+
+        font-family: TT Firs Neue;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.24px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &__login {
+            display: flex !important;
+            align-items: center !important;
+            background-color: #fff !important;
+            color: #081226 !important;
+        }
+
+        &__sign {
+            background-color: #2454FF !important;
+        }
+    }
+}

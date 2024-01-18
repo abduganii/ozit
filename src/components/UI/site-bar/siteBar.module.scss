@@ -1,0 +1,33 @@
+.SiteBar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    &__link {
+        display: inline-block;
+        color: #081226;
+        font-family: Helvetica Neue;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        background: var(--FFFFFF, #FFF);
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__linkActive {
+        color: #2454FF;
+        list-style: circle;
+
+        div {
+            width: 6px;
+            height: 6px;
+            background-color: #2454FF;
+            border-radius: 50%;
+        }
+    }
+}

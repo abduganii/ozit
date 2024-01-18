@@ -1,0 +1,30 @@
+.ForWhomCard {
+    width: 100%;
+    max-width: 368px;
+    border-radius: 24px;
+    border: 3px solid #FFF;
+    padding: 32px;
+    background: linear-gradient(0deg, #CBBEFF 0%, #CBBEFF 100%), lightgray 27.551px 185.168px / 101.63% 74.206% no-repeat, linear-gradient(217deg, rgba(255, 255, 255, 0.82) 3.16%, rgba(255, 255, 255, 0.60) 97.9%), #CBBEFF;
+
+
+    // backdrop-filter: blur(38px);
+
+    &__title {
+        color: var(--081226, #081226);
+        font-family: TT Firs Neue;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    &__text {
+        color: rgba(8, 18, 38, 0.60);
+        font-family: Helvetica Neue;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 12px;
+    }
+}

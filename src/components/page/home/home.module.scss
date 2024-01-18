@@ -1,0 +1,35 @@
+.HomePage {
+    &__info {
+        width: 100%;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 136px;
+
+    }
+
+    &__forwho {
+        color: var(--081226, #081226);
+        text-align: center;
+        font-family: TT Firs Neue;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.4px;
+        margin-top: 136px;
+        margin-bottom: 36px;
+    }
+
+    &__whocard {
+
+
+        &:nth-child(6n - 5),
+        &:nth-child(6n - 2),
+        &:nth-child(6n - 1) {
+            max-width: 740px;
+        }
+
+
+    }
+}

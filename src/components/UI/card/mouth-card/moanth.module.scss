@@ -1,0 +1,54 @@
+.MounthCard {
+    width: 100%;
+    max-width: 363px;
+    height: 265px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: #fff;
+
+    &__btn {
+        display: inline-block;
+        width: 100%;
+        max-width: 112px;
+        border-radius: 9px;
+        background: #F2F2F2;
+        padding: 11px 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        div {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #081226;
+        }
+
+        p {
+            color: #081226;
+            font-family: TT Firs Neue;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: -0.14px;
+            text-transform: uppercase;
+        }
+    }
+
+    // &:nth-child(2) {
+    //     background: lightgray -292.01px -32.161px / 239.796% 248.612% no-repeat, linear-gradient(0deg, #081226 0%, #081226 100%), linear-gradient(0deg, #0C2FAE 0%, #0C2FAE 100%), var(--background-surface-default, #FFF) !important;
+    //     background-blend-mode: normal, normal, darken, normal !important;
+
+    // }
+    &:hover {
+        background: url('/image/Rectangl.jpg'), lightgray -292.01px -32.161px / 239.796% 248.612% no-repeat, linear-gradient(0deg, #081226 0%, #081226 100%), linear-gradient(0deg, #0C2FAE 0%, #0C2FAE 100%), #FFF;
+        background-blend-mode: normal, normal, darken, normal;
+        // background-image: url('/image/Rectangl.jpg');
+    }
+
+
+}
