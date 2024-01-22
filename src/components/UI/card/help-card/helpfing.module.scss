@@ -1,39 +1,31 @@
-.ForWhomCard {
+.HelpToJobCard {
     width: 100%;
-    max-width: 368px;
-    height: 504px;
+    max-width: 556px;
+    height: 480px;
     border-radius: 24px;
     border: 3px solid #FFF;
     padding: 32px;
-    background: linear-gradient(0deg, #CBBEFF 0%, #d2cce9);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
-    // backdrop-filter: blur(38px);
-
-
+    background: linear-gradient(0deg, #CBBEFF 0%, #d2cce9) !important;
 
     &__title {
-        color: var(--081226, #081226);
-        font-family: TT Firs Neue;
-        font-size: 24px;
+        color: #081226;
+        font-family: "TT Firs Neue";
+        font-size: 32px;
         font-style: normal;
         font-weight: 500;
-        line-height: 32px;
+        line-height: 120%;
+        margin-bottom: 16px;
     }
 
     &__text {
         color: rgba(8, 18, 38, 0.60);
-        font-family: Helvetica Neue;
+        font-family: "Helvetica Neue";
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 20px;
-        margin-top: 12px;
     }
-
-
-
 }

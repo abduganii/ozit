@@ -18,7 +18,7 @@ export default function ProgramSection() {
                 <HomeSing />
             </div>
             <div className={cls.ProgramSection__right}>
-                <BlueBtn className={cls.ProgramSection__right__btn}><DocIcons />Download the program in PDF</BlueBtn>
+                <BlueBtn className={cls.ProgramSection__right__btn}><DocIcons color={"#2454FF"} />Download the program in PDF</BlueBtn>
                 <LanguageCard style={{ marginBottom: "8px" }} />
                 <LanguageCard />
                 <MoreBtn style={{ margin: "62px auto 0 auto " }} />

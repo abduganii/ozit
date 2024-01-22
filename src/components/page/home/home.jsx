@@ -10,6 +10,11 @@ import Help from "./components/help";
 import LoarnCard from "@/components/UI/card/learn-card";
 import DoProject from "./components/do-project";
 import ProgramSection from "./components/program";
+import ReviewCard from "@/components/UI/card/review-card";
+import HelpToJobCard from "@/components/UI/card/help-card";
+import CursPriceCard from "@/components/UI/card/curs-price-card";
+import BlogsCard from "@/components/UI/card/blogs-card";
+import Faq from "./components/faq";
 
 export default async function HomePage({ lang }) {
     return (
@@ -74,7 +79,71 @@ export default async function HomePage({ lang }) {
                 <ProgramSection />
 
                 <h3 className={cls.HomePage__forwho}>Отзывы</h3>
+                <div className={cls.HomePage__info}>
+                    <ReviewCard
+                        text={`Я работал в продажах, затем в такси
+                    и не представлял, чем именно хочу
+                    заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
+                        name={"Arlene McCoy"}
+                        position={"Frontend developer @Uzummarket"}
+                    />
+                    <ReviewCard
+                        text={`Я работал в продажах, затем в такси
+                    и не представлял, чем именно хочу
+                    заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
+                        name={"Arlene McCoy"}
+                        position={"Frontend developer @Uzummarket"}
+                    />
+                </div>
 
+                <h3 className={cls.HomePage__forwho}>We can help you find a job, even if you have no IT experience</h3>
+
+                <div className={cls.HomePage__info}>
+                    <HelpToJobCard
+                        title={"We'll tell you how to designyour portfolio"}
+                        text={"To show how much you know and can do"}
+                    />
+                    <HelpToJobCard
+                        title={"We'll tell you how to designyour portfolio"}
+                        text={"To show how much you know and can do"}
+                    />
+                </div>
+
+            </Container>
+            <div className={cls.HomePage__reclama}>
+                <Container>
+                    <h3 className={cls.HomePage__reclama__title}>Try any format of the course for free - you can choose
+                        a one-size-fits-all later</h3>
+                    <div className={cls.HomePage__info}>
+
+                        <CursPriceCard
+                            lesson={"Frontend developer"}
+                            price={"299 000 sum/m"}
+                            text={"Fee is charged monthly"}
+                            arr={[{ id: 1, title: "Take control of your learning journey" }, { id: 2, title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, " }]}
+                        />
+                        <CursPriceCard
+                            lesson={"Frontend developer"}
+                            price={"299 000 sum/m"}
+                            text={"Fee is charged monthly"}
+                            arr={[{ id: 1, title: "Take control of your learning journey" }, { id: 2, title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, " }]}
+                        />
+                    </div>
+
+                </Container>
+            </div>
+            <Container>
+
+                <h3 className={cls.HomePage__forwho}>Blogs</h3>
+                <div className={cls.HomePage__info}>
+                    <BlogsCard
+                        img={'image/frame2.png'}
+                        title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
+                        date={"7 / 11 / 2023"}
+                    />
+                </div>
+
+                <Faq />
             </Container>
         </main>
     )

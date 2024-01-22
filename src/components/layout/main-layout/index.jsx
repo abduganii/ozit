@@ -1,3 +1,4 @@
+import Footer from '@/components/UI/footer'
 import Header from '@/components/UI/header'
 import React from 'react'
 
@@ -6,7 +7,7 @@ export default function MainLayout({ children }) {
         <>
             <Header />
             {children}
-            footer
+            <Footer />
         </>
     )
 }

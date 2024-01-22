@@ -1,0 +1,116 @@
+.Footer {
+    &__top {
+        width: 100%;
+        border-radius: 32px;
+        padding-top: 209px;
+        padding-bottom: 235px;
+        background-image: url('/image/Rectangle25.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__title {
+            width: 100%;
+            max-width: 868px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            color: #081226;
+            text-align: center;
+            font-family: "TT Firs Neue";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.4px;
+        }
+
+        &__btn {
+            margin: 0 auto;
+        }
+    }
+
+    &__bottom {
+        width: 100%;
+
+        background: #081226;
+        margin-top: -30px;
+        padding-top: 70px;
+        padding-bottom: 24px;
+
+        &__nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__logo {
+            color: #FFF;
+            font-family: "TT Firs Neue";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.24px;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            li {
+                color: #FFF;
+                font-family: "Helvetica Neue";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+
+        &__icons {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+
+            a {
+                display: inline-block;
+                padding: 12px;
+                border-radius: 40px;
+                border: 1px solid rgba(255, 255, 255, 0.20);
+            }
+        }
+
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 51px;
+
+            &__list {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                p {
+                    color: rgba(255, 255, 255, 0.40);
+                    font-family: "Helvetica Neue";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.30);
+                font-family: "Helvetica Neue";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                /* 125% */
+            }
+        }
+    }
+}

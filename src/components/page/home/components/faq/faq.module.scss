@@ -1,12 +1,12 @@
-.ProgramSection {
+.Faq {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 64px;
+    gap: 27px;
+    margin-bottom: 146px;
 
     &__left {
         width: 100%;
-        max-width: 416px;
+        max-width: 255px;
 
         &__dote {
             display: flex;
@@ -35,43 +35,79 @@
         }
 
         &__title {
-            width: 100%;
-            max-width: 301px;
             color: var(--081226, #081226);
             font-family: "TT Firs Neue";
             font-size: 40px;
             font-style: normal;
             font-weight: 500;
-            line-height: 48px;
-            /* 120% */
+            line-height: normal;
             letter-spacing: -0.4px;
-            margin-top: 16px;
         }
 
         &__text {
-            width: 100%;
-            max-width: 368px;
             color: rgba(8, 18, 38, 0.60);
+
             font-family: "Helvetica Neue";
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 20px;
-            margin-bottom: 32px;
+            margin: 16px 0;
         }
     }
 
-    &__right {
+    &__btn {
+        padding: 8px 24px !important;
+        box-shadow: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &__list {
         width: 100%;
-        max-width: 650px;
+    }
 
-        &__btn {
-            background-color: #FFF !important;
-            color: #2454FF !important;
-            gap: 6px;
-            box-shadow: none !important;
-            margin-bottom: 32px;
-            padding: 8px 16px !important;
+    &__item {
+        width: 100%;
+        padding: 32px;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h4 {
+                color: var(--081226, #081226);
+                font-family: "TT Firs Neue";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+            }
+        }
+
+        p {
+            color: rgba(8, 18, 38, 0.60);
+
+            font-family: "Helvetica Neue";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 12px;
         }
     }
+
+    &__itemActive {
+        border-radius: 24px;
+        background: #FFF;
+
+        svg {
+            transform: rotate(45deg);
+        }
+    }
+
 }

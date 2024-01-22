@@ -1,0 +1,66 @@
+.CursPriceCard {
+    width: 100%;
+    max-width: 556px;
+    border-radius: 32px;
+    background: #FFF;
+    padding: 24px;
+    text-align: left;
+
+    &__lesson {
+        color: #081226;
+        font-family: "TT Firs Neue";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.14px;
+    }
+
+    &__title {
+        color: var(--081226, #081226);
+        font-family: "TT Firs Neue";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        margin-top: 16px;
+    }
+
+    &__text {
+        color: #081226;
+        font-family: "Helvetica Neue";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 71px;
+    }
+
+    &__div {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px !important;
+
+        p {
+            color: #081226;
+            font-family: "Helvetica Neue";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        justify-content: center;
+        border-radius: 16px;
+        box-shadow: none;
+        margin-top: 60px;
+    }
+}

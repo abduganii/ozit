@@ -1,0 +1,44 @@
+.BlogsPage {
+    margin-bottom: 136px;
+
+    &__hero {
+        width: 100%;
+        padding-top: 165px;
+        padding-bottom: 60px;
+        background: #2454FF;
+        margin: 71px 8px;
+        margin-bottom: 136px;
+        border-radius: 24px;
+
+        &__title {
+            color: #FFF;
+            text-align: center;
+            font-family: "TT Firs Neue";
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 80px;
+            letter-spacing: -1.08px;
+            margin-bottom: 151px;
+        }
+
+        p {
+            color: var(--FFFFFF, #FFF);
+            text-align: center;
+            font-family: "Helvetica Neue";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            width: 100%;
+            max-width: 614px;
+            margin: 0 auto;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}

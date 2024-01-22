@@ -1,9 +1,9 @@
 import { ZIcons } from '../../icon'
 import cls from './language.module.scss'
 
-export default function LanguageCard({ ...other }) {
+export default function LanguageCard({ className, ...other }) {
     return (
-        <div className={cls.LanguageCard}{...other}>
+        <div className={`${cls.LanguageCard} ${className && className}`}{...other}>
             <div className={cls.LanguageCard__project}>
                 <p className={cls.LanguageCard__project__text}>7 topics・1 project・1 week</p>
                 <div>
