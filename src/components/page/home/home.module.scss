@@ -17,8 +17,10 @@
         font-weight: 500;
         line-height: normal;
         letter-spacing: -0.4px;
+        margin: 36px auto;
         margin-top: 136px;
-        margin-bottom: 36px;
+        width: 100%;
+        max-width: 1056px;
     }
 
     &__whocard {
@@ -29,7 +31,5 @@
         &:nth-child(6n - 1) {
             max-width: 740px;
         }
-
-
     }
 }

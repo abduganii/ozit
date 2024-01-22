@@ -4,7 +4,7 @@ import cls from './hero.module.scss'
 export default function Hero() {
     return (
         <div className={cls.Hero}>
-            <button className={cls.Hero__btn}> &lt;Курс&gt;</button>
+            <button className={cls.Hero__btn}> {`<Course>`}</button>
             <h2 className={cls.Hero__title}>Курс «Java-разработчик»</h2>
             <p className={cls.Hero__text}>Научитесь создавать и программировать современные веб-интерфейсы, начните карьеру в IT, оттачивайте своё мастерство</p>
             <BlueBtn className={cls.Hero__btn1}>Начать учиться бесплатно</BlueBtn>

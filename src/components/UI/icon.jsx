@@ -7,3 +7,146 @@ export const IconsTest = () => {
         </>
     )
 }
+
+export const InfoIocns = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <g clip-path="url(#clip0_5_3581)">
+                <path d="M36 0H12C5.37258 0 0 5.37258 0 12V36C0 42.6274 5.37258 48 12 48H36C42.6274 48 48 42.6274 48 36V12C48 5.37258 42.6274 0 36 0Z" fill="url(#paint0_radial_5_3581)" />
+                <g filter="url(#filter0_f_5_3581)">
+                    <rect x="6" y="6" width="36" height="36" rx="10" fill="#57A4FF" />
+                </g>
+                <path d="M14.5355 17.2764C14.2509 17.2764 13.9779 17.3894 13.7767 17.5907C13.5755 17.7919 13.4624 18.0648 13.4624 18.3494C13.4624 18.634 13.5755 18.9069 13.7767 19.1082C13.9779 19.3094 14.2509 19.4225 14.5355 19.4225H33.8991C34.1837 19.4225 34.4567 19.3094 34.6579 19.1082C34.8591 18.9069 34.9722 18.634 34.9722 18.3494C34.9722 18.0648 34.8591 17.7919 34.6579 17.5907C34.4567 17.3894 34.1837 17.2764 33.8991 17.2764H14.5452H14.5355ZM14.5355 22.6611C14.3945 22.6611 14.255 22.6889 14.1248 22.7428C13.9946 22.7967 13.8763 22.8758 13.7767 22.9754C13.677 23.0751 13.598 23.1934 13.5441 23.3235C13.4902 23.4537 13.4624 23.5933 13.4624 23.7342C13.4624 23.8751 13.4902 24.0146 13.5441 24.1448C13.598 24.275 13.677 24.3933 13.7767 24.4929C13.8763 24.5926 13.9946 24.6716 14.1248 24.7255C14.255 24.7795 14.3945 24.8072 14.5355 24.8072H27.4511C27.592 24.8072 27.7315 24.7795 27.8617 24.7255C27.9919 24.6716 28.1102 24.5926 28.2098 24.4929C28.3095 24.3933 28.3885 24.275 28.4424 24.1448C28.4964 24.0146 28.5241 23.8751 28.5241 23.7342C28.5241 23.5933 28.4964 23.4537 28.4424 23.3235C28.3885 23.1934 28.3095 23.0751 28.2098 22.9754C28.1102 22.8758 27.9919 22.7967 27.8617 22.7428C27.7315 22.6889 27.592 22.6611 27.4511 22.6611H14.5355ZM13.4624 29.1092C13.4624 28.5239 13.9502 28.0361 14.5355 28.0361H24.2222C24.5068 28.0361 24.7797 28.1492 24.9809 28.3504C25.1822 28.5517 25.2952 28.8246 25.2952 29.1092C25.2952 29.3938 25.1822 29.6667 24.9809 29.8679C24.7797 30.0692 24.5068 30.1822 24.2222 30.1822H14.5355C13.9404 30.1822 13.4624 29.6945 13.4624 29.1092ZM32.8749 26.0949C32.8749 25.8103 32.7618 25.5374 32.5606 25.3361C32.3593 25.1349 32.0864 25.0218 31.8018 25.0218C31.5172 25.0218 31.2443 25.1349 31.043 25.3361C30.8418 25.5374 30.7288 25.8103 30.7288 26.0949V27.9776L28.8851 27.3143C28.616 27.2172 28.3194 27.2311 28.0605 27.3527C27.8017 27.4744 27.6017 27.6939 27.5047 27.963C27.4077 28.232 27.4215 28.5286 27.5432 28.7875C27.6649 29.0464 27.8844 29.2463 28.1534 29.3433L30.1044 30.0359L28.9631 31.6357C28.8805 31.7504 28.8212 31.8802 28.7888 32.0177C28.7563 32.1553 28.7513 32.2979 28.7739 32.4374C28.8196 32.7191 28.9754 32.9711 29.207 33.138C29.4385 33.3049 29.7269 33.3729 30.0086 33.3272C30.1481 33.3045 30.2818 33.2546 30.402 33.1803C30.5222 33.106 30.6266 33.0088 30.7092 32.8941L31.8018 31.3626L32.8944 32.8941C33.0612 33.127 33.3138 33.284 33.5964 33.3306C33.8791 33.3773 34.1687 33.3097 34.4015 33.1429C34.6344 32.976 34.7914 32.7235 34.838 32.4408C34.8847 32.1582 34.8171 31.8686 34.6503 31.6357L33.4992 30.0359L35.4502 29.3433C35.7192 29.2463 35.9387 29.0464 36.0604 28.7875C36.1821 28.5286 36.1959 28.232 36.0989 27.963C36.0019 27.6939 35.8019 27.4744 35.5431 27.3527C35.2842 27.2311 34.9876 27.2172 34.7185 27.3143L32.8749 27.9776V26.0949Z" fill="white" />
+            </g>
+            <defs>
+                <filter id="filter0_f_5_3581" x="-4" y="-4" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_5_3581" />
+                </filter>
+                <radialGradient id="paint0_radial_5_3581" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24 24) rotate(90) scale(24)">
+                    <stop stop-color="#2454FF" />
+                    <stop offset="1" stop-color="#458FEF" />
+                </radialGradient>
+                <clipPath id="clip0_5_3581">
+                    <rect width="48" height="48" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    )
+}
+
+export const DoneIcons = () => {
+    return (
+        <>
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+                <g filter="url(#filter0_ddd_5_1393)">
+                    <rect x="3" y="3" width="28" height="28" rx="9" fill="#246EFF" />
+                </g>
+                <g filter="url(#filter1_f_5_1393)">
+                    <rect x="8" y="8" width="18" height="18" rx="6" fill="#57A4FF" />
+                </g>
+                <path d="M11 16.5674L15.3461 21L23.19 13" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <defs>
+                    <filter id="filter0_ddd_5_1393" x="0" y="0.5" width="34" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dy="0.5" />
+                        <feGaussianBlur stdDeviation="0.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.478431 0 0 0 0 1 0 0 0 0.24 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_1393" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dy="1" />
+                        <feGaussianBlur stdDeviation="1" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.478431 0 0 0 0 1 0 0 0 0.12 0" />
+                        <feBlend mode="normal" in2="effect1_dropShadow_5_1393" result="effect2_dropShadow_5_1393" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dy="0.5" />
+                        <feGaussianBlur stdDeviation="1.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.478431 0 0 0 0 1 0 0 0 0.12 0" />
+                        <feBlend mode="normal" in2="effect2_dropShadow_5_1393" result="effect3_dropShadow_5_1393" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_5_1393" result="shape" />
+                    </filter>
+                    <filter id="filter1_f_5_1393" x="0" y="0" width="34" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_5_1393" />
+                    </filter>
+                </defs>
+            </svg></>
+    )
+}
+export const EmailIcons = () => {
+    return (
+        <>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <path d="M22.75 4.875H3.25C3.03451 4.875 2.82785 4.9606 2.67548 5.11298C2.5231 5.26535 2.4375 5.47201 2.4375 5.6875V19.5C2.4375 19.931 2.6087 20.3443 2.91345 20.649C3.2182 20.9538 3.63152 21.125 4.0625 21.125H21.9375C22.3685 21.125 22.7818 20.9538 23.0865 20.649C23.3913 20.3443 23.5625 19.931 23.5625 19.5V5.6875C23.5625 5.47201 23.4769 5.26535 23.3245 5.11298C23.1722 4.9606 22.9655 4.875 22.75 4.875ZM13 13.523L5.33914 6.5H20.6609L13 13.523ZM10.0252 13L4.0625 18.4651V7.53492L10.0252 13ZM11.2277 14.102L12.4465 15.2242C12.5964 15.3618 12.7925 15.4382 12.9959 15.4382C13.1994 15.4382 13.3955 15.3618 13.5454 15.2242L14.7641 14.102L20.6548 19.5H5.33914L11.2277 14.102ZM15.9748 13L21.9375 7.53391V18.4661L15.9748 13Z" fill="#2454FF" />
+            </svg></>
+    )
+}
+export const DocIcons = () => {
+    return (
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 21C20.2956 21 21.0587 20.6839 21.6213 20.1213C22.1839 19.5587 22.5 18.7956 22.5 18V9C22.5 8.20435 22.1839 7.44129 21.6213 6.87868C21.0587 6.31607 20.2956 6 19.5 6H14.121C13.9222 5.99983 13.7315 5.92069 13.591 5.78L11.47 3.66C11.2611 3.45089 11.0131 3.28497 10.7402 3.17173C10.4672 3.05848 10.1745 3.00013 9.879 3H4.5C3.70435 3 2.94129 3.31607 2.37868 3.87868C1.81607 4.44129 1.5 5.20435 1.5 6V18C1.5 18.7956 1.81607 19.5587 2.37868 20.1213C2.94129 20.6839 3.70435 21 4.5 21H19.5ZM12.75 10.5C12.75 10.3011 12.671 10.1103 12.5303 9.96967C12.3897 9.82902 12.1989 9.75 12 9.75C11.8011 9.75 11.6103 9.82902 11.4697 9.96967C11.329 10.1103 11.25 10.3011 11.25 10.5V14.69L9.53 12.97C9.38783 12.8375 9.19978 12.7654 9.00548 12.7688C8.81118 12.7723 8.62579 12.851 8.48838 12.9884C8.35097 13.1258 8.27225 13.3112 8.26882 13.5055C8.2654 13.6998 8.33752 13.8878 8.47 14.03L11.47 17.03C11.6106 17.1705 11.8012 17.2493 12 17.2493C12.1988 17.2493 12.3894 17.1705 12.53 17.03L15.53 14.03C15.6037 13.9613 15.6628 13.8785 15.7038 13.7865C15.7448 13.6945 15.7668 13.5952 15.7686 13.4945C15.7704 13.3938 15.7518 13.2938 15.7141 13.2004C15.6764 13.107 15.6203 13.0222 15.549 12.951C15.4778 12.8797 15.393 12.8236 15.2996 12.7859C15.2062 12.7482 15.1062 12.7296 15.0055 12.7314C14.9048 12.7332 14.8055 12.7552 14.7135 12.7962C14.6215 12.8372 14.5387 12.8963 14.47 12.97L12.75 14.69V10.5Z" fill="#2454FF" />
+        </svg>
+    )
+}
+
+export const ZIcons = () => {
+    return (
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <g clip-path="url(#clip0_1_3320)">
+                <g filter="url(#filter0_ddd_1_3320)">
+                    <path d="M4.51506 11.697H9.28844L6.82148 18.0469C6.42735 19.0468 7.47837 19.5796 8.15716 18.7768L15.9231 9.58756C16.0909 9.39056 16.1713 9.19348 16.1713 8.98181C16.1713 8.5804 15.8574 8.29571 15.4487 8.29571H10.6753L13.1423 1.95306C13.5291 0.953122 12.4854 0.420313 11.8065 1.22318L4.03334 10.4124C3.86546 10.6021 3.79248 10.7992 3.79248 11.0181C3.79248 11.4196 4.09903 11.697 4.51506 11.697Z" fill="#246EFF" />
+                </g>
+            </g>
+            <defs>
+                <filter id="filter0_ddd_1_3320" x="1.29248" y="-1.25002" width="17.3789" height="23.3333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="0.416667" />
+                    <feGaussianBlur stdDeviation="0.416667" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.478431 0 0 0 0 1 0 0 0 0.24 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3320" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="0.833333" />
+                    <feGaussianBlur stdDeviation="0.833333" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.478431 0 0 0 0 1 0 0 0 0.12 0" />
+                    <feBlend mode="normal" in2="effect1_dropShadow_1_3320" result="effect2_dropShadow_1_3320" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="0.416667" />
+                    <feGaussianBlur stdDeviation="1.25" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.478431 0 0 0 0 1 0 0 0 0.12 0" />
+                    <feBlend mode="normal" in2="effect2_dropShadow_1_3320" result="effect3_dropShadow_1_3320" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_1_3320" result="shape" />
+                </filter>
+                <clipPath id="clip0_1_3320">
+                    <rect width="20" height="20" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    )
+}
+export const DawnIcons = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_1_3342)">
+                <path d="M6 9L12 15L18 9" stroke="#081226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+                <clipPath id="clip0_1_3342">
+                    <rect width="24" height="24" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    )
+}

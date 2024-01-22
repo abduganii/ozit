@@ -1,34 +1,34 @@
-import { IconsTest } from "../UI/icon";
+import { IconsTest, InfoIocns } from "../UI/icon";
 
 export const InfoCardArr = [
     {
         id: 1,
-        img: <IconsTest/>,
+        img: <InfoIocns/>,
         text:"The 2023 program and the most relevant technologies"
     },
     {
         id: 2,
-        img: <IconsTest/>,
+        img: <InfoIocns/>,
         text:"Практические задачи с применением JavaScript, TypeScript и React.js"
     },
     {
         id: 3,
-        img: <IconsTest/>,
+        img: <InfoIocns/>,
         text:"10+ проектов для портфолио и помощь с поиском работы"
     },
     {
         id: 4,
-        img: <IconsTest/>,
+        img: <InfoIocns/>,
         text:"Учёба в удобное время, главное — вовремя сдавать проекты"
     },
     {
         id: 5,
-        img: <IconsTest/>,
+        img: <InfoIocns/>,
         text:"Воркшопы, лайвкодинг и парное программирование"
     },
     {
         id: 6,
-        img: <IconsTest/>,
+        img: <InfoIocns/>,
         text:"Развитие софтскилов для быстрой адаптации в IT и работы в команде"
     }
 ]

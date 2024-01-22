@@ -1,0 +1,58 @@
+.HomeSing {
+    border-radius: 16px;
+    background: var(--FFFFFF, #FFF);
+    padding: 24px;
+    width: 100%;
+
+    &__email {
+        width: 48px;
+        height: 48px;
+        border: 1px solid #427EF333;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        color: var(--081226, #081226);
+        font-family: "TT Firs Neue";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    &__label {
+        width: 100%;
+        position: relative;
+        padding: 7px 0;
+
+
+        input {
+            display: inline-block;
+            outline: none;
+            padding: 7px 12px;
+            padding-right: 100px;
+            border-radius: 100px;
+            border: 1px solid rgba(8, 18, 38, 0.08);
+        }
+
+        &__btn {
+            position: absolute;
+            right: 2px;
+            top: -2px;
+            padding: 8px 24px !important;
+
+
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            line-height: 20px !important;
+            /* 142.857% */
+            letter-spacing: -0.14px;
+        }
+    }
+}

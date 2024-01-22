@@ -1,0 +1,80 @@
+.LanguageCard {
+    width: 100%;
+    padding: 32px;
+    border-radius: 24px;
+    background: #FFF;
+
+    &__project {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 26px;
+
+        &__text {
+            color: rgba(8, 18, 38, 0.60);
+            font-family: "Helvetica Neue";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: -0.14px;
+            text-transform: uppercase;
+        }
+
+        div {
+            display: flex;
+
+
+            p {
+                color: var(--2454FF, #2454FF);
+                font-family: "Helvetica Neue";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+    }
+
+    &__title {
+        width: 100%;
+        color: #081226;
+        font-family: "TT Firs Neue";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        width: 100%;
+        color: rgba(8, 18, 38, 0.60);
+        font-family: "Helvetica Neue";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__skill {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px;
+
+        &__text {
+            padding: 8px 10px;
+            border-radius: 6px;
+            background: rgba(151, 151, 151, 0.10);
+            color: #081226;
+            font-family: "Helvetica Neue";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: -0.14px;
+        }
+    }
+}

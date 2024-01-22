@@ -1,0 +1,77 @@
+.ProgramSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 145px;
+
+    &__left {
+        width: 100%;
+        max-width: 416px;
+
+        &__dote {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 8px;
+
+            div {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #2454FF;
+            }
+
+            p {
+                color: var(--081226, #081226);
+                font-family: "TT Firs Neue";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                /* 142.857% */
+                letter-spacing: -0.14px;
+                text-transform: uppercase;
+            }
+        }
+
+        &__title {
+            width: 100%;
+            max-width: 301px;
+            color: var(--081226, #081226);
+            font-family: "TT Firs Neue";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px;
+            /* 120% */
+            letter-spacing: -0.4px;
+            margin-top: 16px;
+        }
+
+        &__text {
+            width: 100%;
+            max-width: 368px;
+            color: rgba(8, 18, 38, 0.60);
+            font-family: "Helvetica Neue";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__right {
+        width: 100%;
+        max-width: 650px;
+
+        &__btn {
+            background-color: #FFF !important;
+            color: #2454FF !important;
+            gap: 6px;
+            box-shadow: none !important;
+            margin-bottom: 32px;
+            padding: 8px 16px !important;
+        }
+    }
+}
