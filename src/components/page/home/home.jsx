@@ -72,6 +72,9 @@ export default async function HomePage({ lang }) {
                 </div>
                 <DoProject />
                 <ProgramSection />
+
+                <h3 className={cls.HomePage__forwho}>Отзывы</h3>
+
             </Container>
         </main>
     )
