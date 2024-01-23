@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "TT Firs Neue";
+    src: url("/fonts/TTfont/TTFirsNeueTrialRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TT Firs Neue";
+    src: url("/fonts/TTfont/TTFirsNeueTrialMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TT Firs Neue";
+    src: url("/fonts/TTfont/TTFirsNeueTrialBold.wofff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("/fonts/Helvetica/HelveticaNeueRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("/fonts/Helvetica/HelveticaNeueMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("/fonts/Helvetica/HelveticaNeueBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

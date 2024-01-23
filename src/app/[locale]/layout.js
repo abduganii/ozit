@@ -6,7 +6,7 @@ import Header from '@/components/UI/header'
 import AuthLayout from '@/components/layout/auth-layout'
 import MainLayout from '@/components/layout/main-layout'
 
-// const myFont = localFont({ src: './my-font.woff2' })
+
 
 export const metadata = {
   title: 'Create Next App',
