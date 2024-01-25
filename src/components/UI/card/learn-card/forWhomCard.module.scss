@@ -3,8 +3,11 @@
     max-width: 556px;
     border-radius: 24px;
     border: 3px solid #FFF;
-    padding: 32px;
-    background: linear-gradient(0deg, #CBBEFF 0%, #CBBEFF 100%), lightgray 27.551px 185.168px / 101.63% 74.206% no-repeat, linear-gradient(217deg, rgba(255, 255, 255, 0.82) 3.16%, rgba(255, 255, 255, 0.60) 97.9%), #CBBEFF;
+    // padding: 32px;
+    padding-bottom: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 
 
@@ -17,6 +20,8 @@
         font-weight: 500;
         line-height: 120%;
         margin-bottom: 16px;
+        padding: 32px;
+        padding-bottom: 0;
         /* 38.4px */
     }
 
@@ -27,6 +32,8 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        padding: 0 32px;
+
         /* 125% */
     }
 

@@ -13,30 +13,46 @@ export default function BlogsPage() {
             <Container>
                 <div className={cls.BlogsPage__flex}>
                     <BlogsCard
+                    id={22}
                         img={'image/frame2.png'}
                         title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
                         date={"7 / 11 / 2023"}
+                        style={{marginBottom:"32px"}}
                     />
                     <BlogsCard
+                    id={22}
                         img={'image/frame2.png'}
                         title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
                         date={"7 / 11 / 2023"}
-                    />   <BlogsCard
+                        style={{marginBottom:"32px"}}
+                    />
+                    <BlogsCard
+                    id={22}
                         img={'image/frame2.png'}
                         title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
                         date={"7 / 11 / 2023"}
-                    />   <BlogsCard
+                        style={{marginBottom:"32px"}}
+                    />
+                    <BlogsCard
+                    id={22}
                         img={'image/frame2.png'}
                         title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
                         date={"7 / 11 / 2023"}
-                    />   <BlogsCard
+                        style={{marginBottom:"32px"}}
+                    />
+                    <BlogsCard
+                    id={22}
                         img={'image/frame2.png'}
                         title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
                         date={"7 / 11 / 2023"}
-                    />   <BlogsCard
+                        style={{marginBottom:"32px"}}
+                    />
+                    <BlogsCard
+                    id={22}
                         img={'image/frame2.png'}
                         title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
                         date={"7 / 11 / 2023"}
+                        style={{marginBottom:"32px"}}
                     />
                 </div>
             </Container>

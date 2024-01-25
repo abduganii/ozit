@@ -39,7 +39,7 @@ export default async function HomePage({ lang }) {
                         WhoForArr?.map(e => (
                             <ForWhomCard
                                 key={e?.id}
-                                img={e?.img}
+                                img={e?.image}
                                 title={e?.title}
                                 text={e?.text}
                             />
@@ -65,12 +65,14 @@ export default async function HomePage({ lang }) {
                     Заниматься можно в любое время, главное — вовремя сдавать проекты на проверку.</h2>
                 <div className={cls.HomePage__info}>
                     <LoarnCard
-                        img={'/image/Frame2.png'}
+                        img={'/Home/process-card1-img.png'}
+                        backImage={"/Home/process-card1-bg.png"}
                         title={"First, you learn  visual theory"}
                         text={"To help you memorize better, the material is given in the form of text with pictures and diagrams. If you need to repeat something, you can easily find the information you need by using the search function"}
                     />
                     <LoarnCard
-                        img={'/image/Frame2.png'}
+                        img={'/Home/process-card2-img.png'}
+                        backImage={"/Home/process-card2-bg.png"}
                         title={"First, you learn  visual theory"}
                         text={"To help you memorize better, the material is given in the form of text with pictures and diagrams. If you need to repeat something, you can easily find the information you need by using the search function"}
                     />
@@ -100,10 +102,23 @@ export default async function HomePage({ lang }) {
 
                 <div className={cls.HomePage__info}>
                     <HelpToJobCard
+                        bgImage={"/Home/help-card1.png"}
                         title={"We'll tell you how to designyour portfolio"}
                         text={"To show how much you know and can do"}
                     />
                     <HelpToJobCard
+                        bgImage={"/Home/help-card1.png"}
+                        title={"We'll tell you how to designyour portfolio"}
+                        text={"To show how much you know and can do"}
+                    />
+                      <HelpToJobCard
+                        bgImage={"/Home/help-card3.png"}
+                        
+                        title={"We'll tell you how to designyour portfolio"}
+                        text={"To show how much you know and can do"}
+                    />
+                    <HelpToJobCard
+                        bgImage={"/Home/help-card4.png"}
                         title={"We'll tell you how to designyour portfolio"}
                         text={"To show how much you know and can do"}
                     />
@@ -137,13 +152,16 @@ export default async function HomePage({ lang }) {
                 <h3 className={cls.HomePage__forwho}>Blogs</h3>
                 <div className={cls.HomePage__info}>
                     <BlogsCard
-                        img={'image/frame2.png'}
+                        id={22}
+                        img={'/Home/learninmonths-hover.png'}
                         title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
                         date={"7 / 11 / 2023"}
                     />
                 </div>
 
-                <Faq />
+          
+             <Faq  />
+         
             </Container>
         </main>
     )

@@ -8,7 +8,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: linear-gradient(0deg, #CBBEFF 0%, #d2cce9) !important;
+
+    &:nth-child(3) {
+        .HelpToJobCard__title {
+            color: white;
+        }
+
+        .HelpToJobCard__text {
+            color: white;
+        }
+    }
 
     &__title {
         color: #081226;

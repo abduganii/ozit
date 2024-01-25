@@ -8,6 +8,14 @@
     padding: 24px;
     border-radius: 24px;
     background-color: #fff;
+    transition: all .3s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover {
+        background-image: url("/Home/learninmonths-hover.png");
+    }
 
     &__btn {
         display: inline-block;

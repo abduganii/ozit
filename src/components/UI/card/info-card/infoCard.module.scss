@@ -4,8 +4,8 @@
     background: #FFF;
     padding: 24px;
     // display: flex;
-// justify-content: space-between;
-// flex-direction: column;
+    // justify-content: space-between;
+    // flex-direction: column;
 
     svg {
         width: 48px;
@@ -15,7 +15,7 @@
 
     &__text {
         color: #081226;
-        font-family: Helvetica Neue;
+        // font-family: "Helvetica Neue" !important;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;

@@ -29,7 +29,7 @@ const arr = [
     {
         id: 4,
         text: "FAQ",
-        link: "/faq"
+        link: "/#faq"
     },
     {
         id: 5,
@@ -46,7 +46,12 @@ export default function SiteBar() {
             {
                 arr && arr?.map(e => (
                     <li key={e?.id} >
-                        <Link className={`${cls.SiteBar__link} ${pathName.includes(e?.link) ? cls.SiteBar__linkActive : ""}`} href={e?.link}>
+                        <Link
+                            className={`
+                            ${cls.SiteBar__link} ${pathName.includes(e?.link) ? cls.SiteBar__linkActive : ""} 
+                            ${pathName.includes("/about-us") ? cls.SiteBar__linkBalck : ""}
+                            ${pathName.includes("/about-us") && e?.link == "/about-us" ? cls.SiteBar__linkBalckAvtive : ""}
+                            `} href={e?.link}>
                             <div></div>  {e?.text}
                         </Link>
                     </li>

@@ -40,6 +40,12 @@
         width: 100%;
         max-width: 450px;
 
+        svg {
+            min-width: 28px;
+            width: 28px;
+            height: 28px;
+        }
+
         &__text {
             color: rgba(8, 18, 38, 0.60);
             font-family: Helvetica Neue;

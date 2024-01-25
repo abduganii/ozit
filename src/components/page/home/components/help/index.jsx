@@ -7,7 +7,7 @@ export default function Help() {
         <div className={cls.Help}>
             <div className={cls.Help__img}>
                 <Image
-                    src={'/image/Frame1.png'}
+                    src={'/Home/careerconsultation-left-img.png'}
                     width={564}
                     height={550}
                     alt={"img"}

@@ -1,6 +1,7 @@
 .BlogsCard {
     width: 100%;
     max-width: 368px;
+    cursor: pointer;
 
     img {
         width: 100%;
@@ -9,6 +10,14 @@
         object-fit: cover;
         border-radius: 20px;
     }
+
+    &:hover {
+        .BlogsCard__title {
+            color: #2454FF;
+
+        }
+    }
+
 
     &__title {
         color: #081226;
@@ -20,6 +29,7 @@
         margin-top: 16px;
         margin-bottom: 24px;
         width: 90%;
+        margin-left: 10px;
     }
 
     &__date {
@@ -33,6 +43,7 @@
         font-weight: 400;
         line-height: 20px;
         display: inline-block;
+        margin-left: 10px;
         /* 125% */
     }
 }

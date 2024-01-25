@@ -2,7 +2,7 @@
     margin-bottom: 136px;
 
     &__hero {
-        width: 100%;
+        width: calc(100% - 16px);
         padding-top: 165px;
         padding-bottom: 60px;
         background: #2454FF;

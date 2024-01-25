@@ -1,19 +1,25 @@
 'use client'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import BlueBtn from '../button/blue-btn'
 import Container from '../container'
 import { InstaIcons, TelegramIcons, YoutobeIcons } from '../icon'
 import cls from './footer.module.scss'
 
 export default function Footer() {
+    const params = usePathname()
+   
     return (
         <footer className={cls.Footer}>
-            <div className={cls.Footer__top}>
+            {
+                !params.includes('/blog/') ?  <div className={cls.Footer__top}>
                 <h3 className={cls.Footer__top__title}>
                     Попробуйте любой формат курса бесплатно — выбрать один-единственный можно позже
                 </h3>
                 <BlueBtn className={cls.Footer__top__btn}>Начать учиться бесплатно</BlueBtn>
-            </div>
+            </div>:"" 
+            }
+          
 
             <div className={cls.Footer__bottom}>
                 <Container>

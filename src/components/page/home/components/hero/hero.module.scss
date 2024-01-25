@@ -3,7 +3,7 @@
     margin-top: 71px;
     text-align: center;
     border-radius: 24px;
-    background-image: url('/image/Mesh-Grad.jpg');
+    background-image: url('/Home/showcase.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,6 +75,13 @@
         &__div {
             display: flex;
             align-items: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+
+            }
         }
 
         &__text {
@@ -83,6 +90,7 @@
             color: #FFF;
             font-family: TT Firs Neue;
             font-size: 14px;
+            text-align: left;
             font-style: normal;
             font-weight: 500;
             line-height: 120%;

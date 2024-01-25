@@ -29,7 +29,7 @@ const faqArr = [
 export default function Faq() {
     const [faqId, setfaqId] = useState(false)
     return (
-        <div className={cls.Faq}>
+        <div className={cls.Faq} id='faq'>
             <div className={cls.Faq__left}>
                 <div className={cls.Faq__left__dote}>
                     <div></div>

@@ -1,12 +1,16 @@
+'use client'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import GlobalBtn from '../button/global-btn'
 import Container from '../container'
 import SiteBar from '../site-bar'
 import cls from './header.module.scss'
 
 export default function Header() {
+    const params = usePathname()
+   
     return (
-        <header className={cls.Header}>
+        <header className={`${cls.Header} ${params.includes('/about-us')? cls.Header__transparent :""}`}>
             <Container className={cls.Header__container}>
                 <Link className={cls.Header__logo} href={'/'}>UZIT </Link>
                 <SiteBar />

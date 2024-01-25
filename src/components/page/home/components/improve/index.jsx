@@ -7,7 +7,7 @@ export default function ImproveCareer() {
         <div className={cls.ImproceCareer}>
             <div className={cls.ImproceCareer__image}>
                 <Image
-                    src={'/image/Frame.png'}
+                    src={'/Home/3block.png'}
                     width={556}
                     height={672}
                     alt={"img"}

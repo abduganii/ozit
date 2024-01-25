@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: "Helvetica Neue";
-    src: url("/fonts/Helvetica/HelveticaNeueRegular.woff") format("woff");
+    src: url("/fonts/Helvetica/HelveticaNeueW0177BdCnObl.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
     font-family: "Helvetica Neue";
-    src: url("/fonts/Helvetica/HelveticaNeueMedium.woff") format("woff");
+    src: url("/fonts/Helvetica/HelveticaNeueMediumExtended.wofff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -41,7 +41,7 @@
 
 @font-face {
     font-family: "Helvetica Neue";
-    src: url("/fonts/Helvetica/HelveticaNeueBold.woff") format("woff");
+    src: url("/fonts/Helvetica/HelveticaNeueW0177BdCnObl.woff") format("woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap;

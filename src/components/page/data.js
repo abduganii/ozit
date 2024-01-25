@@ -37,17 +37,20 @@ export const WhoForArr = [
     {
         id: 1,
         title:"Тем, кто хочет стать разработчиком",
-        text:"The 2023 program and the most relevant technologies"
+        text: "The 2023 program and the most relevant technologies",
+        image:"/Home/card 1.png"
     },
     {
         id: 2,
         title:"Тем, кто хочет стать разработчиком",
-        text:"Практические задачи с применением JavaScript, TypeScript и React.js"
+        text: "Практические задачи с применением JavaScript, TypeScript и React.js",
+        image:"/Home/card 2.png"
     },
     {
         id: 3,
         title:"Тем, кто хочет стать разработчиком",
-        text:"10+ проектов для портфолио и помощь с поиском работы"
+        text: "10+ проектов для портфолио и помощь с поиском работы",
+        image:"/Home/card 3.png"
     }
 ]
 
