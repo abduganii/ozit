@@ -14,7 +14,7 @@ export default function Hero() {
                     <Image
                         width={40}
                         height={40}
-                        src={'/image/Ellipse11.png'}
+                        src={'/Home/learninmonths-hover.png'}
                         style={{transform:`translateX(${40}px)`,zIndex:10}}
                         alt="img"
                     />
@@ -22,14 +22,14 @@ export default function Hero() {
                         width={40}
                         height={40}
                         style={{transform:`translateX(${20}px)`,zIndex:9}}
-                        src={'/image/Ellipse11.png'}
+                        src={'/Home/learninmonths-hover.png'}
                         alt="img"
                     />
                      <Image
                         width={40}
                         height={40}
                       
-                        src={'/image/Ellipse11.png'}
+                        src={'/Home/learninmonths-hover.png'}
                         alt="img"
                     />
                     

@@ -45,7 +45,7 @@ export default function SingleBlogsPage() {
                         <div className={cls.SingleBlogsPage__content__person}>
                             <Image width={40}
                                 height={40}
-                                src={'/image/Frame2.png'} alt="img" /> 
+                                src={'/Home/careerconsultation-bg.png'} alt="img" /> 
                             <div>
                                 <h4>Arlene McCoy</h4>
                                 <p > Frontend developer @Uzummarket</p>
@@ -58,7 +58,7 @@ export default function SingleBlogsPage() {
                     </div>
                     <Image
                         className={cls.SingleBlogsPage__content__image}
-                        src={'/image/Cosmic.jpg'} 
+                        src={'/Home/careerconsultation-bg.png'} 
                         width={744}
                         height={436}
                         alt={"img"}
@@ -73,7 +73,7 @@ export default function SingleBlogsPage() {
             <Container className={cls.SingleBlogsPage__flex} >
             <BlogsCard
                     id={22}
-                    img={'/image/frame2.png'}
+                    img={'/Home/learninmonths-hover.png'}
                     title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
                     date={"7 / 11 / 2023"}
                     

@@ -82,6 +82,7 @@ export default async function HomePage({ lang }) {
 
                 <h3 className={cls.HomePage__forwho}>Отзывы</h3>
                 <div className={cls.HomePage__info}>
+                
                     <ReviewCard
                         text={`Я работал в продажах, затем в такси
                     и не представлял, чем именно хочу
@@ -159,7 +160,6 @@ export default async function HomePage({ lang }) {
                     />
                 </div>
 
-          
              <Faq  />
          
             </Container>

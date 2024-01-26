@@ -15,6 +15,10 @@
 
     &:hover {
         background-image: url("/Home/learninmonths-hover.png");
+
+        p {
+            color: white;
+        }
     }
 
     &__btn {
@@ -36,7 +40,7 @@
         }
 
         p {
-            color: #081226;
+            color: #081226 !important;
             font-family: TT Firs Neue;
             font-size: 14px;
             font-style: normal;
@@ -52,11 +56,11 @@
     //     background-blend-mode: normal, normal, darken, normal !important;
 
     // }
-    &:hover {
-        background: url('/image/Rectangl.jpg'), lightgray -292.01px -32.161px / 239.796% 248.612% no-repeat, linear-gradient(0deg, #081226 0%, #081226 100%), linear-gradient(0deg, #0C2FAE 0%, #0C2FAE 100%), #FFF;
-        background-blend-mode: normal, normal, darken, normal;
-        // background-image: url('/image/Rectangl.jpg');
-    }
+    // &:hover {
+    //     background: url('/image/Rectangl.jpg'), lightgray -292.01px -32.161px / 239.796% 248.612% no-repeat, linear-gradient(0deg, #081226 0%, #081226 100%), linear-gradient(0deg, #0C2FAE 0%, #0C2FAE 100%), #FFF;
+    //     background-blend-mode: normal, normal, darken, normal;
+    //     // background-image: url('/image/Rectangl.jpg');
+    // }
 
 
 }
