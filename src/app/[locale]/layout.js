@@ -20,7 +20,6 @@ export default  function  RootLayout({
   params: { locale }
 }) {
   const token = null
-
   return (
     
     <html lang={locale} dir={dir(locale)}>

@@ -2,6 +2,7 @@ import InfoCard from '@/components/UI/card/info-card';
 import TeamCard from '@/components/UI/card/team-card';
 import Container from '@/components/UI/container';
 import { PlayIcons } from '@/components/UI/icon';
+import SwiperWithScrollIcons from '@/components/UI/Swiper';
 import Image from 'next/image';
 import { InfoCardArr} from "../data";
 import Help from '../home/components/help';
@@ -44,13 +45,18 @@ export default function AboutUsPage() {
           </div>
 
 
-          <Container>
+       
           <h3 className={cls.AboutUsPage__title}>Meet the team</h3>
-          <div className={cls.AboutUsPage__flex}>
+    
+          <SwiperWithScrollIcons slidesPerView={3.2}>
+            
               <TeamCard name={"Alexandra Santos"} position={ "Ceo"} />
               <TeamCard name={"Alexandra Santos"} position={ "Ceo"} />
               <TeamCard name={"Alexandra Santos"} position={ "Ceo"} />
-              </div>
+              <TeamCard name={"Alexandra Santos"} position={ "Ceo"} />
+           
+      </SwiperWithScrollIcons>
+      <Container>
             <h3 className={cls.AboutUsPage__title}>Our mission</h3>
               <div className={cls.AboutUsPage__flex}>
               {

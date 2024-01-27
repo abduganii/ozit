@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+
+  margin-left: calc((100% - 1160px) / 2);
+
+  display: flex;
+  padding: 0 20px;
+
+}
+
+.swiper__btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-right: calc((100% - 1160px) / 2);
+  margin-top: 32px;
+
+  button {
+    width: 48px;
+    height: 48px;
+    border-radius: 40px;
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+
+    &:hover {
+      background: #F4F5F5;
+
+    }
+  }
+}

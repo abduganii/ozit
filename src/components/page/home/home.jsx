@@ -15,6 +15,7 @@ import HelpToJobCard from "@/components/UI/card/help-card";
 import CursPriceCard from "@/components/UI/card/curs-price-card";
 import BlogsCard from "@/components/UI/card/blogs-card";
 import Faq from "./components/faq";
+import SwiperWithScrollIcons from "@/components/UI/Swiper";
 
 export default async function HomePage({ lang }) {
     return (
@@ -79,26 +80,49 @@ export default async function HomePage({ lang }) {
                 </div>
                 <DoProject />
                 <ProgramSection />
-
+            </Container>
                 <h3 className={cls.HomePage__forwho}>Отзывы</h3>
-                <div className={cls.HomePage__info}>
-                
-                    <ReviewCard
-                        text={`Я работал в продажах, затем в такси
-                    и не представлял, чем именно хочу
-                    заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
-                        name={"Arlene McCoy"}
-                        position={"Frontend developer @Uzummarket"}
+                {/* <div className={cls.HomePage__info}> */}
+                <SwiperWithScrollIcons slidesPerView={3.5} >
+                        <ReviewCard
+                            text={`Я работал в продажах, затем в такси
+                        и не представлял, чем именно хочу
+                        заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
+                            name={"Arlene McCoy"}
+                            position={"Frontend developer @Uzummarket"}
+                    />
+                      <ReviewCard
+                            text={`Я работал в продажах, затем в такси
+                        и не представлял, чем именно хочу
+                        заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
+                            name={"Arlene McCoy"}
+                            position={"Frontend developer @Uzummarket"}
                     />
                     <ReviewCard
-                        text={`Я работал в продажах, затем в такси
-                    и не представлял, чем именно хочу
-                    заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
-                        name={"Arlene McCoy"}
-                        position={"Frontend developer @Uzummarket"}
+                            text={`Я работал в продажах, затем в такси
+                        и не представлял, чем именно хочу
+                        заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
+                            name={"Arlene McCoy"}
+                            position={"Frontend developer @Uzummarket"}
                     />
-                </div>
-
+                      <ReviewCard
+                            text={`Я работал в продажах, затем в такси
+                        и не представлял, чем именно хочу
+                        заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
+                            name={"Arlene McCoy"}
+                            position={"Frontend developer @Uzummarket"}
+                />
+                   <ReviewCard
+                            text={`Я работал в продажах, затем в такси
+                        и не представлял, чем именно хочу
+                        заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
+                            name={"Arlene McCoy"}
+                            position={"Frontend developer @Uzummarket"}
+                        />
+                  
+                  </SwiperWithScrollIcons> 
+                {/* </div> */}
+                <Container>
                 <h3 className={cls.HomePage__forwho}>We can help you find a job, even if you have no IT experience</h3>
 
                 <div className={cls.HomePage__info}>
@@ -148,21 +172,30 @@ export default async function HomePage({ lang }) {
 
                 </Container>
             </div>
-            <Container>
+        
 
                 <h3 className={cls.HomePage__forwho}>Blogs</h3>
-                <div className={cls.HomePage__info}>
+                <SwiperWithScrollIcons  slidesPerView={3.5}>
+                    
                     <BlogsCard
                         id={22}
                         img={'/Home/learninmonths-hover.png'}
                         title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
                         date={"7 / 11 / 2023"}
                     />
-                </div>
-
+                      <BlogsCard
+                        id={22}
+                        img={'/Home/learninmonths-hover.png'}
+                        title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
+                        date={"7 / 11 / 2023"}
+                    />
+              </SwiperWithScrollIcons>
+             
+            <Container style={{marginTop:"146px"}}>
              <Faq  />
-         
-            </Container>
+                
+             </Container>
+      
         </main>
     )
 }
