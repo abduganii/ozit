@@ -15,11 +15,15 @@ import HelpToJobCard from "@/components/UI/card/help-card";
 import CursPriceCard from "@/components/UI/card/curs-price-card";
 import BlogsCard from "@/components/UI/card/blogs-card";
 import Faq from "./components/faq";
-
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/utils/auth";
 export default async function HomePage({ lang }) {
+    const session = await getServerSession(authOptions);
+    console.log('SESSION: ', session)
     return (
         <main>
             <Hero />
+            <h1>{ session ? 'Logged': 'Not login' }</h1>
             <Container >
                 <div className={cls.HomePage__info}>
                     {
@@ -82,7 +86,7 @@ export default async function HomePage({ lang }) {
 
                 <h3 className={cls.HomePage__forwho}>Отзывы</h3>
                 <div className={cls.HomePage__info}>
-                
+
                     <ReviewCard
                         text={`Я работал в продажах, затем в такси
                     и не представлял, чем именно хочу
@@ -114,7 +118,7 @@ export default async function HomePage({ lang }) {
                     />
                       <HelpToJobCard
                         bgImage={"/Home/help-card3.png"}
-                        
+
                         title={"We'll tell you how to designyour portfolio"}
                         text={"To show how much you know and can do"}
                     />
@@ -161,7 +165,7 @@ export default async function HomePage({ lang }) {
                 </div>
 
              <Faq  />
-         
+
             </Container>
         </main>
     )
