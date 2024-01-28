@@ -15,12 +15,19 @@ import HelpToJobCard from "@/components/UI/card/help-card";
 import CursPriceCard from "@/components/UI/card/curs-price-card";
 import BlogsCard from "@/components/UI/card/blogs-card";
 import Faq from "./components/faq";
+
 import SwiperWithScrollIcons from "@/components/UI/Swiper";
 
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/utils/auth";
+
 export default async function HomePage({ lang }) {
+    const session = await getServerSession(authOptions);
+    console.log('SESSION: ', session)
     return (
         <main>
             <Hero />
+            <h1>{ session ? 'Logged': 'Not login' }</h1>
             <Container >
                 <div className={cls.HomePage__info}>
                     {
@@ -82,21 +89,15 @@ export default async function HomePage({ lang }) {
                 <ProgramSection />
             </Container>
                 <h3 className={cls.HomePage__forwho}>Отзывы</h3>
-                {/* <div className={cls.HomePage__info}> */}
+
                 <SwiperWithScrollIcons slidesPerView={3.5} >
-                        <ReviewCard
-                            text={`Я работал в продажах, затем в такси
-                        и не представлял, чем именно хочу
-                        заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
-                            name={"Arlene McCoy"}
-                            position={"Frontend developer @Uzummarket"}
-                    />
-                      <ReviewCard
-                            text={`Я работал в продажах, затем в такси
-                        и не представлял, чем именно хочу
-                        заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
-                            name={"Arlene McCoy"}
-                            position={"Frontend developer @Uzummarket"}
+                    <ReviewCard
+                        text={`Я работал в продажах, затем в такси
+                    и не представлял, чем именно хочу
+                    заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
+                        name={"Arlene McCoy"}
+                        position={"Frontend developer @Uzummarket"}
+
                     />
                     <ReviewCard
                             text={`Я работал в продажах, затем в такси
@@ -111,7 +112,7 @@ export default async function HomePage({ lang }) {
                         заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
                             name={"Arlene McCoy"}
                             position={"Frontend developer @Uzummarket"}
-                />
+                        />
                    <ReviewCard
                             text={`Я работал в продажах, затем в такси
                         и не представлял, чем именно хочу
@@ -121,7 +122,7 @@ export default async function HomePage({ lang }) {
                         />
                   
                   </SwiperWithScrollIcons> 
-                {/* </div> */}
+                
                 <Container>
                 <h3 className={cls.HomePage__forwho}>We can help you find a job, even if you have no IT experience</h3>
 
@@ -138,7 +139,7 @@ export default async function HomePage({ lang }) {
                     />
                       <HelpToJobCard
                         bgImage={"/Home/help-card3.png"}
-                        
+
                         title={"We'll tell you how to designyour portfolio"}
                         text={"To show how much you know and can do"}
                     />
@@ -169,11 +170,8 @@ export default async function HomePage({ lang }) {
                             arr={[{ id: 1, title: "Take control of your learning journey" }, { id: 2, title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, " }]}
                         />
                     </div>
-
                 </Container>
             </div>
-        
-
                 <h3 className={cls.HomePage__forwho}>Blogs</h3>
                 <SwiperWithScrollIcons  slidesPerView={3.5}>
                     
@@ -195,7 +193,7 @@ export default async function HomePage({ lang }) {
              <Faq  />
                 
              </Container>
-      
+
         </main>
     )
 }
