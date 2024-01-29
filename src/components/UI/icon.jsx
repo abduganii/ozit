@@ -280,8 +280,8 @@ export const BackIcons = () => {
 export const LeftIcons = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <g clip-path="url(#clip0_1_4030)">
-          <path d="M13.999 18L7.99902 12L13.999 6" stroke="#081226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <g clipPath="url(#clip0_1_4030)">
+          <path d="M13.999 18L7.99902 12L13.999 6" stroke="#081226" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </g>
         <defs>
           <clipPath id="clip0_1_4030">
@@ -294,8 +294,8 @@ export const LeftIcons = () => {
 export const RightIcons = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <g clip-path="url(#clip0_1_4032)">
-        <path d="M8.99902 6L14.999 12L8.99902 18" stroke="#081226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <g clipPath="url(#clip0_1_4032)">
+        <path d="M8.99902 6L14.999 12L8.99902 18" stroke="#081226" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </g>
         <defs>
         <clipPath id="clip0_1_4032">

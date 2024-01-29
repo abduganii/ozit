@@ -15,19 +15,15 @@ import HelpToJobCard from "@/components/UI/card/help-card";
 import CursPriceCard from "@/components/UI/card/curs-price-card";
 import BlogsCard from "@/components/UI/card/blogs-card";
 import Faq from "./components/faq";
-
 import SwiperWithScrollIcons from "@/components/UI/Swiper";
-
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/utils/auth";
+import VimeoPlayer from "@/components/UI/vimeo";
 
 export default async function HomePage({ lang }) {
-    const session = await getServerSession(authOptions);
-    console.log('SESSION: ', session)
+
     return (
         <main>
             <Hero />
-            <h1>{ session ? 'Logged': 'Not login' }</h1>
+            <VimeoPlayer/>
             <Container >
                 <div className={cls.HomePage__info}>
                     {
