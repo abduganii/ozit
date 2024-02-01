@@ -1,0 +1,23 @@
+.AuthLayout {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    &__content {
+        width: 100%;
+        overflow: auto;
+
+
+    }
+
+    &__headerPadding {
+        padding-top: 72px;
+    }
+
+    &__right {
+        width: 100%;
+        max-width: 511px;
+        font-size: 40px;
+        overflow: auto;
+    }
+}

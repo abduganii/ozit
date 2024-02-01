@@ -17,6 +17,11 @@ const arr = [
         link: "/about-us"
     },
     {
+        id: 4,
+        text: "Consultation",
+        link: "/consultation"
+    },
+    {
         id: 32,
         text: "Blog",
         link: "/blog"
@@ -26,15 +31,11 @@ const arr = [
         text: "Price",
         link: "/price"
     },
-    {
-        id: 4,
-        text: "FAQ",
-        link: "/#faq"
-    },
+  
     {
         id: 5,
         text: "Contact us",
-        link: "/contact-us"
+        link: "/"
     }
 ]
 export default function SiteBar() {

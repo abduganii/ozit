@@ -10,9 +10,12 @@ export default function Footer() {
     const params = usePathname()
    
     return (
-        <footer className={cls.Footer}>
+        <>
+
             {
-                !params.includes('/blog/') ?  <div className={cls.Footer__top}>
+              !params.includes('/auth/login')?  <footer className={cls.Footer}>
+            {
+                !params.includes('/blog/') &&  !params.includes('/consultation')  ?  <div className={cls.Footer__top}>
                 <h3 className={cls.Footer__top__title}>
                     Попробуйте любой формат курса бесплатно — выбрать один-единственный можно позже
                 </h3>
@@ -58,7 +61,9 @@ export default function Footer() {
                     </div>
                 </Container>
             </div>
-        </footer>
+        </footer>  
+            :""}
+    </>
 
     )
 }

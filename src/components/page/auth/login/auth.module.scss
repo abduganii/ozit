@@ -1,0 +1,117 @@
+.LoginPage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 32px;
+    width: 100%;
+    padding-top: 70px;
+
+    &__contect {
+        width: 100%;
+        max-width: 462px;
+        margin-left: calc((100% - 1160px) / 2);
+        text-align: center;
+
+        &__title {
+            color: var(--081226, #081226);
+            text-align: center;
+            font-family: "TT Firs Neue";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.4px;
+            margin-bottom: 8px;
+        }
+
+        &__text {
+            color: var(--081226, #081226);
+            text-align: center;
+            font-family: "Helvetica Neue";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 24px;
+        }
+
+        &__btn {
+            display: flex;
+            width: 100%;
+            padding: 16px 24px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border-radius: 16px;
+            text-align: center;
+            color: #FFF;
+            font-family: "Helvetica Neue";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: -0.18px;
+        }
+
+        &__goole {
+            background: #487CFC;
+
+            div {
+                padding: 2px;
+                border-radius: 100%;
+                background-color: #fff;
+            }
+        }
+
+        &__Apply {
+            background: #000;
+            margin-top: 8px;
+        }
+
+        &__disc {
+            color: rgba(8, 18, 38, 0.40);
+            text-align: center;
+            font-family: "Helvetica Neue";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 24px;
+            margin-bottom: 32px;
+        }
+
+        &__sigup {
+            width: 100%;
+            max-width: 289px;
+            margin: 0 auto;
+            border-radius: 16px;
+            background: #F0F0F0;
+            padding: 20px 24px;
+            color: var(--081226, #081226);
+            text-align: center;
+            font-family: "Helvetica Neue";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+
+            span {
+                color: #2454FF;
+            }
+
+            /* 125% */
+        }
+    }
+
+    &__image {
+        position: relative;
+        max-width: 724px;
+        width: 100%;
+        aspect-ratio: 0.93/1;
+        border-radius: 2px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+}

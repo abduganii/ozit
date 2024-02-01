@@ -23,7 +23,7 @@ export default async function HomePage({ lang }) {
     return (
         <main>
             <Hero />
-            <VimeoPlayer/>
+            {/* <VimeoPlayer/> */}
             <Container >
                 <div className={cls.HomePage__info}>
                     {

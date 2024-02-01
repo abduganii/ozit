@@ -1,10 +1,27 @@
-import React from 'react'
+'use client'
+import DashboardHeader from '@/components/UI/dashboard-header'
+import DashboardNavabr from '@/components/UI/dashboard-navbar'
+import { useRouter } from 'next/navigation'
+import React, { useEffect } from 'react'
+import cls from "./authLayout.module.scss"
+
 
 export default function AuthLayout({ children }) {
+    const router = useRouter()
+    useEffect(() => {
+        router.push('/dashboard/home') 
+    },[])
     return (
-        <div>
-            AuthLayout
-            {children}
+        <div className={cls.AuthLayout}>
+            <DashboardNavabr/>
+            <div className={`${cls.AuthLayout__content}`}>
+                <DashboardHeader/>
+                <div className={`${cls.AuthLayout__headerPadding}`}>
+                    {children}
+               </div>
+            </div>
+            <div className={cls.AuthLayout__right}>
+            </div>
         </div>
     )
 }
