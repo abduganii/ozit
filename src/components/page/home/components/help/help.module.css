@@ -1,0 +1,44 @@
+.Help {
+  border-radius: 24px;
+  background-image: url("/Home/careerconsultation-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+.Help__img {
+  width: 100%;
+  max-width: 554px;
+  height: 550px;
+  padding-top: 30px;
+}
+.Help__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Help__content {
+  width: 100%;
+  max-width: 492px;
+}
+.Help__content h3 {
+  width: 100%;
+  color: var(--FFFFFF, #FFF);
+  font-family: "TT Firs Neue";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+.Help__content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}/*# sourceMappingURL=help.module.css.map */

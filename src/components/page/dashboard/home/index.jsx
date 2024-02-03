@@ -1,20 +1,83 @@
+'use client'
+import SprintCard from '@/components/UI/card/sprint-card'
+import { useRouter } from 'next/navigation'
 import cls from './home.module.scss'
 
+const DataARr = [
+  {
+    id: 1,
+    title: "1.1 Welcome abroad - how to use the UzIT platform?",
+    progres: 10,
+    time: "5:42",
+    exercises:0,
+  },
+  {
+    id: 2,
+    title: "1.1 Welcome abroad - how to use the UzIT platform?",
+    progres: 100,
+    time: "5:42",
+    exercises:0,
+  },
+  {
+    id: 3,
+    title: "1.1 Welcome abroad - how to use the UzIT platform?",
+    progres: 90,
+    time: "5:42",
+    exercises:0,
+  }
+]
 export default function DashboardHomePage() {
+  const router = useRouter()
   return (
-    <div className={cls.DashboardHomePage}>
-      12-13 декабря 2023 года в сети появилась информация о первой серьезной аварии на строящемся в Афганистане канале Куштепа. Данная новость об утечке воды, была изучена Агентством «Узбеккосмос» на основе ретроспективного анализа мультиспектральных космических снимков.
-
-      Фото: Sentinel-2
-      12 декабря представители экологической коалиции «Реки без границ» (Rivers without Boundaries) сообщили о возникновении серьезной аварии на строящемся канале Коштепа в соседней стране. Этот канал предназначен для отвода воды из реки Амударьи.
-
-      В Агентстве «Узбеккосмос» изучили сообщения на основе ретроспективного анализа мультиспектральных космических снимков различного пространственного разрешения и выявили подъем подземных грунтовых вод, который наблюдается на отдельных участках канала с мая 2022 года.
-
-      На четырех участках канала временно устанавливались преграды в процессе строительства. Однако 10 октября 2023 года, по завершении первого этапа работ, эти препятствия были полностью демонтированы, что привело к формированию водного потока.
-
-
-
-      Космический мониторинг выявил утечку воды примерно из 30-метрового участка правого берега на 75,6-м километре канала Куштепа 4 ноября 2023 года. 5 ноября площадь затопленной территории составила 19,5 кв. км., 25 ноября — 23,8 кв. км., а по состоянию на 13 декабря 30,3 кв. км.
-    </div>
+      <div className={cls.DashboardHomePage}>
+        {/* <VimeoPlayer/> */}
+        <SprintCard
+          lectures={"12 lectures"}
+          min={"160 min"}
+          exercises={"24 exercises"}
+          title={"Sprint 1- Intro to Java"}
+        isActive={true} dataArr={DataARr} 
+        onClick={()=>router.push(`/dashboard/lesson/${1}/vidoe`)}
+          
+          />
+      <SprintCard
+          lectures={"12 lectures"}
+          min={"160 min"}
+          exercises={"24 exercises"}
+          title={"Sprint 1- Intro to Java"}
+        dataArr={DataARr} 
+        onClick={()=>router.push(`/dashboard/lesson/${1}/vidoe`)}
+          
+        />
+         <SprintCard
+          lectures={"12 lectures"}
+          min={"160 min"}
+          exercises={"24 exercises"}
+          title={"Sprint 1- Intro to Java"}
+        dataArr={DataARr} 
+        onClick={()=>router.push(`/dashboard/lesson/${1}/vidoe`)}
+          
+        />
+            <SprintCard
+          lectures={"12 lectures"}
+          min={"160 min"}
+          exercises={"24 exercises"}
+          title={"Sprint 1- Intro to Java"}
+        dataArr={DataARr} 
+        onClick={()=>router.push(`/dashboard/lesson/${1}/vidoe`)}
+          
+        />
+            <SprintCard
+          lectures={"12 lectures"}
+          min={"160 min"}
+          exercises={"24 exercises"}
+          title={"Sprint 1- Intro to Java"}
+        dataArr={DataARr} 
+        onClick={()=>router.push(`/dashboard/lesson/${1}/vidoe`)}
+          
+          />
+      </div>
+      
+  
   )
 }

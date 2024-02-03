@@ -1,0 +1,19 @@
+.PricePage {
+  margin-top: 140px;
+  margin-bottom: 136px;
+}
+.PricePage__title {
+  color: #081226;
+  text-align: center;
+  font-family: "TT Firs Neue";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-bottom: 48px;
+}
+.PricePage__flex {
+  display: flex;
+  gap: 8px;
+}/*# sourceMappingURL=price.module.css.map */

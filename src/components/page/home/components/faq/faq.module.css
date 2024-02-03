@@ -1,0 +1,97 @@
+.Faq {
+  display: flex;
+  align-items: flex-start;
+  gap: 27px;
+  margin-bottom: 146px;
+  cursor: pointer;
+}
+.Faq__left {
+  width: 100%;
+  max-width: 255px;
+}
+.Faq__left__dote {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.Faq__left__dote div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #2454FF;
+}
+.Faq__left__dote p {
+  color: var(--081226, #081226);
+  font-family: "TT Firs Neue";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: -0.14px;
+  text-transform: uppercase;
+}
+.Faq__left__title {
+  color: var(--081226, #081226);
+  font-family: "TT Firs Neue";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.Faq__left__text {
+  color: rgba(8, 18, 38, 0.6);
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 16px 0;
+}
+.Faq__btn {
+  padding: 8px 24px !important;
+  box-shadow: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.Faq__list {
+  width: 100%;
+}
+.Faq__item {
+  width: 100%;
+  padding: 32px;
+}
+.Faq__item div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Faq__item div h4 {
+  color: var(--081226, #081226);
+  font-family: "TT Firs Neue";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.Faq__item p {
+  color: rgba(8, 18, 38, 0.6);
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 12px;
+}
+.Faq__itemActive {
+  border-radius: 24px;
+  background: #FFF;
+}
+.Faq__itemActive svg {
+  transform: rotate(45deg);
+}/*# sourceMappingURL=faq.module.css.map */

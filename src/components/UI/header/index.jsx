@@ -16,7 +16,7 @@ export default function Header(props) {
     return (
         <header className={`${cls.Header} ${params.includes('/about-us')? cls.Header__transparent :""}`}>
             <Container className={cls.Header__container}>
-                <Link className={cls.Header__logo} href={'/'}>UZIT </Link>
+                <Link className={cls.Header__logo} href={'/home'}>UZIT </Link>
                 <SiteBar />
 
                 <div className={cls.Header__btn}>

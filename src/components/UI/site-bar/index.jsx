@@ -35,7 +35,7 @@ const arr = [
     {
         id: 5,
         text: "Contact us",
-        link: "/"
+        link: "/contact"
     }
 ]
 export default function SiteBar() {

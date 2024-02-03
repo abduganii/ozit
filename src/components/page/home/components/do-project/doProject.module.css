@@ -1,0 +1,38 @@
+.DoProject {
+  width: 100%;
+  height: 630px;
+  aspect-ratio: 16/9;
+  padding: 32px;
+  border-radius: 24px;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("/Home/process-card3-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 184px;
+}
+.DoProject div {
+  width: 100%;
+  max-width: 508px;
+}
+.DoProject div p {
+  width: 100%;
+  color: var(--FFFFFF, #FFF);
+  font-family: "TT Firs Neue";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 8px;
+}
+.DoProject div h4 {
+  width: 100%;
+  color: var(--FFFFFF, #FFF);
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.18px;
+}/*# sourceMappingURL=doProject.module.css.map */

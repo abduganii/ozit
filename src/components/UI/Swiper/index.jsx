@@ -1,30 +1,26 @@
 'use client'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Autoplay, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import cls from "./SwiperWithScrollIcons.module.scss"
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay'
 import React, { useState } from 'react';
 import { LeftIcons, RightIcons } from '../icon';
 
-export default async function SwiperWithScrollIcons({ children,slidesPerView}) {
+export default  function SwiperWithScrollIcons({ children,slidesPerView}) {
     const [swipers,setSwiper] = useState()
     return  (
     <>
      <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[ Autoplay]}
         spaceBetween={8}
         slidesPerView={slidesPerView}
-        navigation
-        pagination={{ clickable: true }}
-      
+        autoplay={{ delay: 2500, disableOnInteraction: false,loop:true }}
         className={cls.container}
-            
-        // onSwiper={(e) => setSwiper(e)}
+        // loop={true}
+        onSwiper={(e) => setSwiper(e)}
         onSlideChange={() => console.log('slide change')}
     >
         {React.Children.map(children, (child, index) => (
@@ -33,9 +29,9 @@ export default async function SwiperWithScrollIcons({ children,slidesPerView}) {
         ...
     </Swiper>
         <div className={cls.swiper__btn}>
-            <button ><LeftIcons/></button>   
-            <button><RightIcons/></button>   
+            <button onClick={()=>swipers.slidePrev()}><LeftIcons/></button>   
+            <button onClick={()=>swipers.slideNext()}><RightIcons/></button>   
         </div>
     </>
     );
-};
+};3

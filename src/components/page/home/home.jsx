@@ -83,10 +83,10 @@ export default async function HomePage({ lang }) {
                 </div>
                 <DoProject />
                 <ProgramSection />
-            </Container>
+           
                 <h3 className={cls.HomePage__forwho}>Отзывы</h3>
 
-                <SwiperWithScrollIcons slidesPerView={3.5} >
+                <SwiperWithScrollIcons slidesPerView={3} >
                     <ReviewCard
                         text={`Я работал в продажах, затем в такси
                     и не представлял, чем именно хочу
@@ -116,10 +116,23 @@ export default async function HomePage({ lang }) {
                             name={"Arlene McCoy"}
                             position={"Frontend developer @Uzummarket"}
                         />
-                  
+                   <ReviewCard
+                            text={`Я работал в продажах, затем в такси
+                        и не представлял, чем именно хочу
+                        заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
+                            name={"Arlene McCoy"}
+                            position={"Frontend developer @Uzummarket"}
+                    />
+                     <ReviewCard
+                            text={`Я работал в продажах, затем в такси
+                        и не представлял, чем именно хочу
+                        заниматься. Однажды случайно наткнулся на Практикум и прошёл курс. С тех пор уже вырос до middle фронтенд-разработчика в Loymax. Параллельно работаю в UzIT`}
+                            name={"Arlene McCoy"}
+                            position={"Frontend developer @Uzummarket"}
+                    />
                   </SwiperWithScrollIcons> 
                 
-                <Container>
+                
                 <h3 className={cls.HomePage__forwho}>We can help you find a job, even if you have no IT experience</h3>
 
                 <div className={cls.HomePage__info}>
@@ -168,6 +181,9 @@ export default async function HomePage({ lang }) {
                     </div>
                 </Container>
             </div>
+            <Container>
+
+           
                 <h3 className={cls.HomePage__forwho}>Blogs</h3>
                 <SwiperWithScrollIcons  slidesPerView={3.5}>
                     
@@ -184,7 +200,7 @@ export default async function HomePage({ lang }) {
                         date={"7 / 11 / 2023"}
                     />
               </SwiperWithScrollIcons>
-             
+            </Container>
             <Container style={{marginTop:"146px"}}>
              <Faq  />
                 

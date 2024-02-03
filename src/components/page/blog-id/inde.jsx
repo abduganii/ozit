@@ -6,6 +6,7 @@ import Container from '@/components/UI/container'
 import { BackIcons, FacebookIcons, IconsIcons, Telegram1Icons, TwiterIcons } from '@/components/UI/icon'
 import Image from 'next/image'
 import BlogsCard from '@/components/UI/card/blogs-card'
+import SwiperWithScrollIcons from '@/components/UI/Swiper'
 export default function SingleBlogsPage() {
     const params = useParams()
     const router = useRouter()
@@ -71,13 +72,16 @@ export default function SingleBlogsPage() {
             </Container>
                 <h3 className={cls.SingleBlogsPage__keep}>Keep reading</h3>
             <Container className={cls.SingleBlogsPage__flex} >
-            <BlogsCard
+                <SwiperWithScrollIcons slidesPerView={3}>
+                    
+                 <BlogsCard
                     id={22}
                     img={'/Home/learninmonths-hover.png'}
                     title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
                     date={"7 / 11 / 2023"}
                     
                     />
+            </SwiperWithScrollIcons>
             </Container>
         </div>
     )

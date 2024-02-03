@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
 import cls from "./authLayout.module.scss"
 
-
 export default function AuthLayout({ children }) {
     const router = useRouter()
     useEffect(() => {
@@ -14,14 +13,9 @@ export default function AuthLayout({ children }) {
     return (
         <div className={cls.AuthLayout}>
             <DashboardNavabr/>
-            <div className={`${cls.AuthLayout__content}`}>
-                <DashboardHeader/>
-                <div className={`${cls.AuthLayout__headerPadding}`}>
-                    {children}
-               </div>
-            </div>
-            <div className={cls.AuthLayout__right}>
-            </div>
+            
+            {children}
+          
         </div>
     )
 }

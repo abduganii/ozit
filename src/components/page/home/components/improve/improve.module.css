@@ -1,0 +1,51 @@
+.ImproceCareer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ImproceCareer__image {
+  width: 100%;
+  max-width: 556px;
+  height: 672px;
+  aspect-ratio: 9/10.88;
+}
+.ImproceCareer__content {
+  width: 100%;
+  max-width: 486px;
+}
+.ImproceCareer__title {
+  width: 100%;
+  max-width: 464px;
+  color: var(--081226, #081226);
+  font-family: TT Firs Neue;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  margin-bottom: 40px;
+}
+.ImproceCareer__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 450px;
+}
+.ImproceCareer__list svg {
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+}
+.ImproceCareer__list__text {
+  color: rgba(8, 18, 38, 0.6);
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}/*# sourceMappingURL=improve.module.css.map */
