@@ -1,8 +1,10 @@
 'use client'
 import BlueBtn from '@/components/UI/button/blue-btn'
+import {Collapse} from 'react-collapse';
 import { PlusIcons } from '@/components/UI/icon'
 import { useState } from 'react'
 import cls from './faq.module.scss'
+
 
 const faqArr = [
     {
@@ -44,7 +46,10 @@ export default function Faq() {
                 {faqArr?.map(e => (
                     <li className={`${cls.Faq__item} ${faqId == e?.id ? cls.Faq__itemActive : ""}`} key={e?.id} onClick={() => setfaqId(state => state == e?.id ? false : e?.id)}>
                         <div><h4>{e?.title}</h4> <PlusIcons /> </div>
-                        {faqId == e?.id ? <p> {e?.text}</p> : ""}
+                        <Collapse isOpened={faqId}>
+                            {faqId == e?.id ? <p> {e?.text}</p> : ""}
+                        </Collapse>
+
                     </li>
                 ))}
             </ul>}
