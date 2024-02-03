@@ -13,7 +13,6 @@ export default function AuthLayout({ children }) {
     return (
         <div className={cls.AuthLayout}>
             <DashboardNavabr/>
-            
             {children}
           
         </div>

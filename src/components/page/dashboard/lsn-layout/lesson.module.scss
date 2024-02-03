@@ -11,5 +11,35 @@
     &__right {
         width: 100%;
         max-width: 511px;
+
+        &__head {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__btn {
+            color: var(--081226, #081226);
+            text-align: center;
+            font-family: "Helvetica Neue";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            padding: 11px 12px;
+            border-radius: 12px;
+            background: #FFF;
+
+        }
+
+        &__img {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 0.68/1;
+            border-radius: 2px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
     }
 }

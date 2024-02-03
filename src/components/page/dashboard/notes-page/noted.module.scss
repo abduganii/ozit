@@ -8,6 +8,7 @@
     border-radius: 20px;
     background: var(--FFFFFF, #FFF);
 
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -85,6 +86,27 @@
                 color: #2454FF;
                 cursor: pointer;
             }
+        }
+    }
+
+    &__Bell {
+
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            color: var(--081226, #081226);
+            text-align: center;
+            font-family: "Helvetica Neue";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            margin-top: 16px;
+            /* 26px */
         }
     }
 }

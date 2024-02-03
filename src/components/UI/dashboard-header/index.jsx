@@ -23,7 +23,7 @@ const navbarArr = [{
   secondLink:"/exercises"
 }
 ]
-export default function DashboardHeader({ currentLesson ,sprintId}) {
+export default function DashboardHeader({ currentLesson ,OpenMadal,sprintId}) {
   const pathName = usePathname()
    
   return (
@@ -36,7 +36,7 @@ export default function DashboardHeader({ currentLesson ,sprintId}) {
       </ul>}
       <div className={cls.DashboardHeader__pogination}>
         <div className={`${cls.DashboardHeader__pogination__btn} ${cls.DashboardHeader__pogination__btndisable}`}><DownIcons/></div>
-        <div className={cls.DashboardHeader__pogination__btn}>{currentLesson}  <div><DownIcons/></div></div>
+        <div className={cls.DashboardHeader__pogination__btn} onClick={OpenMadal}>{currentLesson}  <div><DownIcons/></div></div>
         <div className={cls.DashboardHeader__pogination__btn}><DownIcons/></div>
       </div>
     </header>
