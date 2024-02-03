@@ -5,7 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { DocsIcons, FlyIcons, LogoIcons } from '../icon'
+import { DeleteWhiteIcons, DocsIcons, FlyIcons, LogoIcons, LogoutIcons } from '../icon'
+import PaPap from '../madal/papap-modal'
 import SettingMadal from '../madal/setting-madal'
 import cls from './dashboardNavbar.module.scss'
 
@@ -15,6 +16,8 @@ export default function DashboardNavabr() {
   const [openProfle, setOpenProfle] = useState(false)
   const [openAccount, setopenAccount] = useState(false)
   const [openPassword, setopenPassword] = useState(false)
+  const [openDelete, setopenDelete] = useState(false)
+  const [logout, setlogout] = useState(false)
   
   return (
     <div className={cls.DashboardNavabr}>
@@ -41,8 +44,14 @@ export default function DashboardNavabr() {
             setOpenProfle(true)
             setOpenMadal(false)
           }}
+          
           accountOpen={() => {
             setopenAccount(true)
+            setOpenMadal(false)
+          }}
+
+          logout={() => {
+            setlogout(true)
             setOpenMadal(false)
           }}
         />
@@ -50,14 +59,28 @@ export default function DashboardNavabr() {
       </>
         : ""
       }
-
-      {
-        openProfle ? <EdetProfile close={()=>setOpenProfle(false)}/>:""
-      }
-
-      {openAccount ? <AccountSet close={() => setopenAccount(false)} openPassword={ ()=>setopenPassword(true)} /> : ""}
+      {openProfle ? <EdetProfile close={()=>setOpenProfle(false)}/>:""}
+      {openAccount ? <AccountSet close={() => setopenAccount(false)}
+        openPassword={() => setopenPassword(true)}
+        openDelete={() => setopenDelete(true)} /> : ""}
+      {openPassword ? <ChangePassword close={() => setopenPassword(false)} /> : ""}
       
-      {openPassword ? <ChangePassword  close={() => setopenPassword(false)}/>:""}
+      {logout ? <PaPap
+        color={"#F2F2F2"}
+        icons={LogoutIcons()}
+        title={"Log out "}
+        text={"Are you sure you want to leave from your account? "}
+        btnText={"Log out "}
+        close={() => setlogout(false)} />
+        : ""}
+        {openDelete ? <PaPap
+        color={"#E32A1A"}
+        icons={DeleteWhiteIcons()}
+        title={"Delete account "}
+        text={"re you sure you want to delete your account? "}
+        btnText={"Delete"}
+        close={() => setopenDelete(false)} />
+        : ""}
     </div>
   )
 }

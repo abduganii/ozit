@@ -1,0 +1,113 @@
+.PaPap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        border-radius: 16px;
+        background: #FFF;
+        padding: 16px;
+        z-index: 10;
+        box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.10);
+
+
+        &__icons {
+            border-radius: 28px;
+            background: #F2F2F2;
+            display: flex;
+            width: 56px;
+            height: 56px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin: 16px auto;
+            margin-top: -16px;
+        }
+    }
+
+    &__title {
+        color: #030C24;
+        text-align: center;
+        font-feature-settings: 'ss04'on;
+        font-family: "Helvetica Neue";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    &__text {
+        color: rgba(8, 18, 38, 0.60);
+        text-align: center;
+        font-feature-settings: 'ss04'on;
+        font-family: "Helvetica Neue";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 12px auto;
+        margin-bottom: 40px;
+        width: 300px;
+    }
+
+    &__back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.50);
+        backdrop-filter: blur(16px);
+        z-index: 5;
+    }
+
+    &__close {
+        margin-left: auto;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.04);
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+
+        button {
+            width: 100%;
+            display: flex;
+            padding: 10px 18px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 8px;
+            background: #E7EFFF;
+            color: #2454FF;
+            font-feature-settings: 'ss04'on;
+            font-family: "Helvetica Neue";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+
+            &:last-child {
+                color: #E32A1A;
+                background: var(--Color-BG-Terracotta, #FFEEEB);
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            }
+        }
+    }
+}

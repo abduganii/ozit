@@ -19,7 +19,7 @@ export default  function  RootLayout({
   children,
   params: { locale }
 }) {
-  const token = true
+  const token = null
   
 
   return (
