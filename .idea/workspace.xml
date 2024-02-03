@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="auth providers added">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/vimeo/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/axios_init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="video added and axios init added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/dashboard/home/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/dashboard/home/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/card/sprint-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/card/sprint-card/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/icon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/icon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/main-layout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/main-layout/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/home/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/vimeo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/vimeo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/dashboard/home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/dashboard/home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/home/components/faq/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/home/components/faq/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +33,22 @@
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
+  }
+}</component>
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPENED&quot;,
+    &quot;assignee&quot;: {
+      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
+      &quot;username&quot;: &quot;oybek1024&quot;,
+      &quot;fullname&quot;: &quot;Oybek Mukhiddinov&quot;
+    }
+  }
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://gitlab.com/incorp-team/uzit/frontend.git&quot;,
+    &quot;second&quot;: &quot;00551c4a-6378-4ee8-a310-3a09ad4ad409&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
@@ -66,29 +79,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/kebyo/apps/uzit",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/Users/kebyo/.nvm/versions/node/v20.10.0/bin/node",
-    "nodejs_package_manager_path": "yarn",
-    "npm.build.executor": "Run",
-    "npm.dev.executor": "Run",
-    "npm.start.executor": "Run",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "ts.external.directory.path": "/Users/kebyo/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kebyo/apps/uzit&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/Users/kebyo/.nvm/versions/node/v20.10.0/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/kebyo/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -139,6 +152,10 @@
       <workItem from="1706283783871" duration="17846000" />
       <workItem from="1706451883823" duration="4135000" />
       <workItem from="1706538966412" duration="5235000" />
+      <workItem from="1706608608519" duration="455000" />
+      <workItem from="1706609069437" duration="1133000" />
+      <workItem from="1706885459667" duration="1799000" />
+      <workItem from="1706943850479" duration="4519000" />
     </task>
     <task id="LOCAL-00001" summary="auth providers added">
       <option name="closed" value="true" />

@@ -53,4 +53,6 @@ button {
 .swiper{
   overflow:visible !important;
 }
-
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
