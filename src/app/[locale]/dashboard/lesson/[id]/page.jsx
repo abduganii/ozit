@@ -1,4 +1,4 @@
-import LassonPage from '@/components/page/dashboard/lsn-vidoe'
+import LassonPage from '@/components/page/dashboard/lsn-text'
 
 
 

@@ -11,6 +11,37 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        div {
+            display: flex;
+
+            span {
+                color: #F62E2E;
+                font-family: "Helvetica Neue";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px;
+                margin-left: 2px;
+            }
+        }
+
+        &__btn {
+            display: inline-block;
+            color: #F62E2E;
+            font-family: "Helvetica Neue";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            display: flex;
+            padding: 6px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 6px;
+
+        }
     }
 
     &__title {
