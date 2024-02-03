@@ -1,0 +1,20 @@
+.GlobalBtn {
+    border-radius: 8px;
+    background: #2454FF !important;
+    display: flex;
+    padding: 14px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 125% */
+
+    &__opcity {
+        opacity: 0.5;
+    }
+}

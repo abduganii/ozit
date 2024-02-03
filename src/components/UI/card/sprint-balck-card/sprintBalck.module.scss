@@ -1,0 +1,99 @@
+.SprntBalcCard {
+    padding: 28px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    margin: 28px 0;
+
+    &__active {
+        border-radius: 16px;
+        background: rgba(37, 37, 37, 0.60);
+        backdrop-filter: blur(40.774227142333984px);
+        border-bottom: 1px solid transparent;
+    }
+
+    &__top {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        &__iconsRote {
+            transform: rotate(180deg);
+        }
+
+        &__left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        &__btn {
+            display: flex;
+            padding: 7px 10px 8px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.20);
+            color: #FFF;
+            font-family: "Helvetica Neue";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            /* 15.6px */
+        }
+    }
+
+    &__title {
+        color: #FFF;
+        font-family: "Helvetica Neue";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    &__list {
+        width: 100%;
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        display: flex;
+        gap: 15px;
+
+        &:first-child {
+            margin-top: 14px;
+        }
+
+        &:last-child {
+            border-bottom: 1px solid transparent;
+        }
+
+        &__left {
+            width: 100%;
+
+            p {
+                width: 100%;
+                color: var(--Text-Color-Dark-Secondary, rgba(235, 235, 245, 0.60));
+                font-family: "Helvetica Neue";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                margin-bottom: 8px;
+            }
+
+            h3 {
+                color: var(--Text-Color-Dark-Primary, #FFF);
+                font-family: "Helvetica Neue";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                /* 20.8px */
+            }
+        }
+    }
+
+
+}

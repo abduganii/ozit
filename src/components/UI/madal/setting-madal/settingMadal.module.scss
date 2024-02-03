@@ -1,0 +1,71 @@
+.SettingMadal {
+    position: absolute;
+    left: 64px;
+    bottom: 44px;
+    width: 290px;
+    padding: 24px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 72px 0px rgba(0, 0, 0, 0.14);
+    z-index: 10;
+
+    &__name {
+        color: var(--081226, #081226);
+        font-family: "Helvetica Neue";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    &__email {
+        color: rgba(8, 18, 38, 0.60);
+        font-family: "Helvetica Neue";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        margin-bottom: 12px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+        gap: 8px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(8, 18, 38, .02);
+        }
+
+        p {
+            color: #081226;
+            font-family: "Helvetica Neue";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
+
+    }
+
+    &__btn {
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        color: var(--081226, #081226);
+        font-family: "Helvetica Neue";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        border-radius: 8px;
+        background: #F2F2F2;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,61 @@
+.AccountSet {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+
+    &__left {
+        width: 100%;
+    }
+
+    &__passwrod {
+        margin-bottom: 24px;
+
+        &__text {
+            color: var(--081226, #081226);
+            font-family: "Helvetica Neue";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            margin-bottom: 16px;
+        }
+
+        &__wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 18px;
+
+            p {
+                color: var(--081226, #081226);
+                font-family: "Helvetica Neue";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+
+
+            }
+
+            span {
+                color: #2454FF;
+                font-family: "Helvetica Neue";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                cursor: pointer;
+            }
+        }
+
+        &__delete {
+            color: #E32A1A;
+            font-family: "Helvetica Neue";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            cursor: pointer;
+        }
+    }
+}

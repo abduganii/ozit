@@ -27,6 +27,7 @@
     "react-collapse": "^5.1.1",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.5.0",
+    "react-input-mask": "^2.0.4",
     "sass": "^1.69.5",
     "swiper": "^11.0.5"
   },
