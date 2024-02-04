@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="video added and axios init added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/dashboard/home/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/dashboard/home/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/card/sprint-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/card/sprint-card/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/icon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/icon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/vimeo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/vimeo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/dashboard/home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/dashboard/home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/home/components/faq/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/home/components/faq/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
