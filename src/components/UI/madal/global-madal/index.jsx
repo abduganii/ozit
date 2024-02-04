@@ -3,8 +3,8 @@ import cls from './editProfile.module.scss'
 
 export default function GlobalMadal({className,close,title, children}) {
   return (
-    <div className={cls.EdetProfile}>
-          <div className={cls.EdetProfile__content}>
+    <div className={`${cls.EdetProfile} `}>
+          <div className={`${cls.EdetProfile__content} `}>
               <div className={cls.EdetProfile__content__top}>
               <div className={cls.EdetProfile__colse} onClick={close}><DeleteIcons color={"black"} /></div>  
           </div>

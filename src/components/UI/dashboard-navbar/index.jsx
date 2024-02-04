@@ -1,6 +1,7 @@
 import AccountSet from '@/components/page/dashboard/account-settings'
 import ChangePassword from '@/components/page/dashboard/change-password'
 import EdetProfile from '@/components/page/dashboard/edit-profile'
+import Subscription from '@/components/page/dashboard/subscription'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -17,7 +18,9 @@ export default function DashboardNavabr() {
   const [openAccount, setopenAccount] = useState(false)
   const [openPassword, setopenPassword] = useState(false)
   const [openDelete, setopenDelete] = useState(false)
+  const [subscription, setSubscription] = useState(false)
   const [logout, setlogout] = useState(false)
+  
   
   return (
     <div className={cls.DashboardNavabr}>
@@ -25,8 +28,8 @@ export default function DashboardNavabr() {
         <LogoIcons />
       </Link>
       <div className={cls.DashboardNavabr__nav}>
-          <Link href={'/dashboard/home/notes'}><DocsIcons color={pathname ==="/dashboard/home/notes" ? "#2454FF" : "#707682"}/></Link>
-         <Link href={'/'}><FlyIcons /></Link>
+          <Link    href={'/dashboard/home/notes'}><DocsIcons color={pathname ==="/dashboard/home/notes" ? "#2454FF" : "#707682"}/></Link>
+         <div className={cls.DashboardNavabr__nav__fly} onClick={()=>setSubscription(true)}><FlyIcons /></div>
         <div className={cls.DashboardNavabr__profile} onClick={()=>setOpenMadal(true)}>
           <Image
             src={'/Home/Profile.svg'}
@@ -81,6 +84,10 @@ export default function DashboardNavabr() {
         btnText={"Delete"}
         close={() => setopenDelete(false)} />
         : ""}
+      
+      {subscription?
+        <Subscription close={() => setSubscription(false)} />
+          :""}
     </div>
   )
 }

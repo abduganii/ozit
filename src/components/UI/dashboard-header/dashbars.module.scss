@@ -20,6 +20,7 @@
 
         &__item {
             width: calc(100% / 3);
+            z-index: 9;
         }
 
         &__list {
@@ -33,6 +34,19 @@
             font-style: normal;
             font-weight: 400;
             line-height: 130%;
+            z-index: 9;
+        }
+
+        &__animatin {
+            transition: all .3s ease-in-out;
+            position: absolute;
+            top: 4px;
+            z-index: 8;
+            width: calc(100% / 3);
+            height: 32px;
+            border-radius: 8px;
+            background: var(--FFFFFF, #FFF);
+            box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.14);
         }
 
         &__listActive {

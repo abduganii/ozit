@@ -1,0 +1,34 @@
+.EdetProfile {
+    display: flex;
+    width: 100%;
+    gap: 32px;
+
+    &__wrap {
+        width: 100%;
+        max-width: 1052px !important;
+    }
+
+    &__nabvar {
+        width: 100%;
+        max-width: 168px;
+
+        p {
+            color: rgba(8, 18, 38, 0.60);
+            font-feature-settings: 'ss04'on;
+            font-family: "Helvetica Neue";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+        }
+
+
+        &__active {
+            background: var(--bg, #F8F8F9);
+        }
+    }
+}

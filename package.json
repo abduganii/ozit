@@ -22,6 +22,7 @@
     "next": "^14.0.4",
     "next-auth": "^4.24.5",
     "next-i18n-router": "^5.0.2",
+    "nextjs-toploader": "^1.6.6",
     "qs": "^6.11.2",
     "react": "^18.2.0",
     "react-collapse": "^5.1.1",

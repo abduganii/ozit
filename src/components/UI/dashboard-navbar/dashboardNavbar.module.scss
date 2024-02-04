@@ -25,6 +25,11 @@
         gap: 24px;
         flex-direction: column;
 
+
+        &__fly {
+            cursor: pointer;
+
+        }
     }
 
     &__profile {

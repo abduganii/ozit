@@ -1,0 +1,77 @@
+.Billing {
+    width: 100%;
+
+    &__title {
+        color: var(--081226, #081226);
+        font-family: "Helvetica Neue";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        color: var(--081226, #081226);
+        font-family: "Helvetica Neue";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        margin-bottom: 32px;
+    }
+
+    &__title2 {
+        color: var(--081226, #081226);
+        font-family: "Helvetica Neue";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        margin-bottom: 8px;
+    }
+
+    &__text2 {
+        color: rgba(8, 18, 38, 0.60);
+        font-family: "Helvetica Neue";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        margin-bottom: 32px;
+
+        span {
+            color: var(--081226, #081226);
+            font-family: "Helvetica Neue";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        button {
+            color: var(--081226, #081226);
+            font-family: "Helvetica Neue";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            border-radius: 8px;
+            background: var(--F2F2F2, #F2F2F2);
+            padding: 8px 10px;
+            width: 100%;
+            max-width: 157px;
+            text-align: center;
+
+            &:nth-child(2) {
+                color: #E32A1A;
+            }
+        }
+    }
+}

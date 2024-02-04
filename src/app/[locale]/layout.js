@@ -1,12 +1,10 @@
-import i18nConfig from '../../../i18nConfig'
+import NextTopLoader from 'nextjs-toploader';
 import { dir } from 'i18next'
-// import localFont from 'next/font/local'
+import i18nConfig from '../../../i18nConfig'
 import '../../style/globals.css'
-import Header from '@/components/UI/header'
+
 import AuthLayout from '@/components/layout/auth-layout'
 import MainLayout from '@/components/layout/main-layout'
-
-
 
 export const metadata = {
   title: 'Uz IT',
@@ -19,13 +17,22 @@ export default  function  RootLayout({
   children,
   params: { locale }
 }) {
-  const token = null
+  const token = true
   
-
   return (
-    
     <html lang={locale} dir={dir(locale)}>
       <body >
+      <NextTopLoader
+        color="#2299DD"
+        initialPosition={0.08}
+        crawlSpeed={200}
+        height={3}
+        crawl={true}
+        showSpinner={true}
+        easing="ease"
+        speed={200}
+        shadow="0 0 10px #2299DD,0 0 5px #2299DD"
+        />
         {
           token ? <AuthLayout>
             {children}
@@ -34,7 +41,6 @@ export default  function  RootLayout({
           {children}
           </MainLayout>
         }
-    
       </body>
     </html>
   )

@@ -1,0 +1,52 @@
+.PaPap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+    &__content {
+        position: relative;
+        width: 100%;
+        max-width: 436px;
+        border-radius: 16px;
+        background: #FFF;
+        padding: 32px;
+        z-index: 10;
+        box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.10);
+
+
+    }
+
+    &__close {
+        width: 48px;
+        height: 48px;
+        display: inline-flex;
+        padding: 12px;
+        align-items: flex-start;
+        gap: 8px;
+        border-radius: 56px;
+        background: rgba(255, 255, 255, 0.80);
+        position: absolute;
+        top: -30px;
+        right: -50px;
+        cursor: pointer;
+    }
+
+
+    &__back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.50);
+        backdrop-filter: blur(16px);
+        z-index: 5;
+    }
+
+}

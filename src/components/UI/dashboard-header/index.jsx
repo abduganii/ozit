@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { useState } from "react"
 import { DownIcons } from "../icon"
 import cls from "./dashbars.module.scss"
 
@@ -25,14 +26,16 @@ const navbarArr = [{
 ]
 export default function DashboardHeader({ currentLesson ,OpenMadal,sprintId}) {
   const pathName = usePathname()
+  const [left,setleft] = useState(0)
    
   return (
     <header className={cls.DashboardHeader}>
       {navbarArr &&<ul className={cls.DashboardHeader__navBar}>
-        {navbarArr?.map(e => (
+        {navbarArr?.map((e,i) => (
           <li  className={cls.DashboardHeader__navBar__item}
-            key={e?.id}><Link className={`${cls.DashboardHeader__navBar__list} ${pathName.includes(e?.secondLink) ? cls.DashboardHeader__navBar__listActive : ""}`} href={`${e?.link}${sprintId}${e?.secondLink}`}>{e?.text}</Link></li>
+            key={e?.id}><Link className={`${cls.DashboardHeader__navBar__list}`} onClick={()=>setleft(i * 90.6)} href={`${e?.link}${sprintId}${e?.secondLink}`}>{e?.text}</Link></li>
       ))}
+      <div className={cls.DashboardHeader__navBar__animatin} style={{left:left+3}}></div>
       </ul>}
       <div className={cls.DashboardHeader__pogination}>
         <div className={`${cls.DashboardHeader__pogination__btn} ${cls.DashboardHeader__pogination__btndisable}`}><DownIcons/></div>
