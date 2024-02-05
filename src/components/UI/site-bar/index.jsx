@@ -38,7 +38,7 @@ const arr = [
         link: "/contact"
     }
 ]
-export default function SiteBar() {
+export default function SiteBar({windowHeight}) {
     const pathName = usePathname()
 
 
@@ -50,8 +50,8 @@ export default function SiteBar() {
                         <Link
                             className={`
                             ${cls.SiteBar__link} ${pathName.includes(e?.link) ? cls.SiteBar__linkActive : ""} 
-                            ${pathName.includes("/about-us") ? cls.SiteBar__linkBalck : ""}
-                            ${pathName.includes("/about-us") && e?.link == "/about-us" ? cls.SiteBar__linkBalckAvtive : ""}
+                            ${pathName.includes("/about-us")  && windowHeight< 810   ? cls.SiteBar__linkBalck : ""}
+                            ${pathName.includes("/about-us") && windowHeight< 810  && e?.link == "/about-us" ? cls.SiteBar__linkBalckAvtive : ""}
                             `} href={e?.link}>
                             <div></div>  {e?.text}
                         </Link>
