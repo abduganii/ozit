@@ -17,7 +17,7 @@ export default  function  RootLayout({
   children,
   params: { locale }
 }) {
-  const token = true
+  const token = false
   
   return (
     <html lang={locale} dir={dir(locale)}>
