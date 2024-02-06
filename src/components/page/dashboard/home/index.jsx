@@ -26,66 +26,29 @@ const DataARr = [
         exercises: 0,
     }
 ]
-export default function DashboardHomePage(props) {
+export default function DashboardHomePage({data}) {
     const router = useRouter()
-    const items = [...props.data].map(e => {
-        return {
-            id: e.id,
-            title: e.name,
-            progres: 90,
-            time: "5:42",
-            exercises: 0
-        }
-    })
-    console.log('DashboardHomePage', items)
+  
+    console.log('DashboardHomePage', data?.course_sprints)
     return (
         <div className={cls.DashboardHomePage}>
             {/* <VimeoPlayer/> */}
-            <SprintCard
+            {data?.course_sprints && data?.course_sprints?.map(e => (
+                <SprintCard
+                key={e?.id}
                 lectures={"12 lectures"}
                 min={"160 min"}
                 exercises={"24 exercises"}
-                title={"Sprint 1- Intro to Java"}
-                isActive={true} dataArr={DataARr}
-                onClick={() => router.push(`/dashboard/lesson/${1}/vidoe`)}
-
-            />
-            <SprintCard
-                lectures={"12 lectures"}
-                min={"160 min"}
-                exercises={"24 exercises"}
-                title={"Sprint 1- Intro to Java"}
+                title={e?.title}
                 dataArr={DataARr}
-                onClick={() => router.push(`/dashboard/lesson/${1}/vidoe`)}
+                onClick={() => router.push(`/dashboard/lesson/${e?.id}/vidoe`)}
 
             />
-            <SprintCard
-                lectures={"12 lectures"}
-                min={"160 min"}
-                exercises={"24 exercises"}
-                title={"Sprint 1- Intro to Java"}
-                dataArr={DataARr}
-                onClick={() => router.push(`/dashboard/lesson/${1}/vidoe`)}
-
-            />
-            <SprintCard
-                lectures={"12 lectures"}
-                min={"160 min"}
-                exercises={"24 exercises"}
-                title={"Sprint 1- Intro to Java"}
-                dataArr={DataARr}
-                onClick={() => router.push(`/dashboard/lesson/${1}/vidoe`)}
-
-            />
-            <SprintCard
-                lectures={"12 lectures"}
-                min={"160 min"}
-                exercises={"24 exercises"}
-                title={"Sprint 1- Intro to Java"}
-                dataArr={DataARr}
-                onClick={() => router.push(`/dashboard/lesson/${1}/vidoe`)}
-
-            />
+            ))}
+          
+           
         </div>
     )
 }
+
+
