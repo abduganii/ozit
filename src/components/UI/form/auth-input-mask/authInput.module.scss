@@ -1,0 +1,33 @@
+.AuthInput {
+    width: 100%;
+
+    &__label {
+        color: rgba(8, 18, 38, 0.60);
+        font-family: "Helvetica Neue";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    &__input {
+        display: inline-block;
+        outline: none;
+        width: 100%;
+        padding: 20px 16px;
+        border-radius: 16px;
+        border: 1px solid #F2F2F2;
+        background: #F8F8F9;
+        color: rgba(8, 18, 38, 0.60);
+        font-family: "Helvetica Neue";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+
+        &::placeholder {
+            color: rgba(8, 18, 38);
+        }
+    }
+}

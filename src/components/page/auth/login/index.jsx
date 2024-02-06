@@ -1,6 +1,7 @@
 "use client"
 import BlueBtn from "@/components/UI/button/blue-btn"
 import GlobalBtn from "@/components/UI/button/global-btn"
+import AuthInputMask from "@/components/UI/form/auth-input"
 import AuthInput from "@/components/UI/form/auth-input"
 import { ApllyIcons, GoogleIcons } from "@/components/UI/icon"
 import AuthMadala from "@/components/UI/madal/auth-madal"
@@ -32,6 +33,10 @@ export default function LoginPage() {
       {openMadal == 1? <AuthMadala close={()=>setOpenMadal(false)}>
         <h3 className={cls.AuthMadala__title}>Enter your number</h3>
         <p className={cls.AuthMadala__text}>To ensure the security and privacy of your account, we require phone verification</p>
+        <AuthInputMask
+              placeholder={"Phone number"}
+              mask="+\9\9\8 (99) 999-99-99"
+            />
         <button className={cls.AuthMadala__btn} onClick={()=>setOpenMadal(2)}>Send code</button>
       </AuthMadala>:""
       }
