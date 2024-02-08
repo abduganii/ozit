@@ -17,7 +17,8 @@ export default  function  RootLayout({
   children,
   params: { locale }
 }) {
-  const token = cookies().get("token")?.value|| null
+const token = cookies().get("token")?.value|| null
+
   
  
     
