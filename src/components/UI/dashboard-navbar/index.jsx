@@ -4,8 +4,9 @@ import EdetProfile from '@/components/page/dashboard/edit-profile'
 import Subscription from '@/components/page/dashboard/subscription'
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { useState } from 'react'
+import Cookies from 'js-cookie';
 import { DeleteWhiteIcons, DocsIcons, FlyIcons, LogoIcons, LogoutIcons } from '../icon'
 import PaPap from '../madal/papap-modal'
 import SettingMadal from '../madal/setting-madal'
@@ -20,7 +21,7 @@ export default function DashboardNavabr() {
   const [openDelete, setopenDelete] = useState(false)
   const [subscription, setSubscription] = useState(false)
   const [logout, setlogout] = useState(false)
-  
+  const router = useRouter()
   
   return (
     <div className={cls.DashboardNavabr}>
@@ -74,6 +75,12 @@ export default function DashboardNavabr() {
         title={"Log out "}
         text={"Are you sure you want to leave from your account? "}
         btnText={"Log out "}
+        logout={() =>  {
+          Cookies.remove('token')
+          router.push('/home')
+          router.refresh();
+
+        }}
         close={() => setlogout(false)} />
         : ""}
         {openDelete ? <PaPap

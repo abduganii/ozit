@@ -1,7 +1,7 @@
 import { DeleteIcons } from '../../icon'
 import cls from './papapMadul.module.scss'
 
-export default function PaPap({title,color,text,icons,cancel,submit,btnText,close}) {
+export default function PaPap({title,color,text,icons,logout,cancel,submit,btnText,close}) {
   return (
     <div className={cls.PaPap}>
     
@@ -14,7 +14,7 @@ export default function PaPap({title,color,text,icons,cancel,submit,btnText,clos
         <p className={cls.PaPap__text}>{text}</p>
         <div className={cls.PaPap__btn}>
         <button onClick={close}>Cancel</button>
-        <button>{btnText} </button>
+        <button onClick={logout}>{btnText} </button>
         </div>
           </div>
         <div className={cls.PaPap__back} onClick={close}></div>

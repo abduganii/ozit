@@ -2,7 +2,7 @@ import NextTopLoader from 'nextjs-toploader';
 import { dir } from 'i18next'
 import i18nConfig from '../../../i18nConfig'
 import '../../style/globals.css'
-
+import { cookies } from 'next/headers'
 import AuthLayout from '@/components/layout/auth-layout'
 import MainLayout from '@/components/layout/main-layout'
 
@@ -17,8 +17,10 @@ export default  function  RootLayout({
   children,
   params: { locale }
 }) {
-  const token = true
+  const token = cookies().get("token")?.value|| null
   
+ 
+    
   return (
     <html lang={locale} dir={dir(locale)}>
       <body >
