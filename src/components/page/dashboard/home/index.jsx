@@ -29,17 +29,17 @@ const DataARr = [
 export default function DashboardHomePage({data}) {
     const router = useRouter()
   
-    console.log('DashboardHomePage', data?.course_sprints)
+    console.log('DashboardHomePage', data)
     return (
         <div className={cls.DashboardHomePage}>
             {/* <VimeoPlayer/> */}
-            {data?.course_sprints && data?.course_sprints?.map(e => (
+            {data?.length && data?.map(e => (
                 <SprintCard
                 key={e?.id}
                 lectures={"12 lectures"}
                 min={"160 min"}
                 exercises={"24 exercises"}
-                title={e?.title}
+                title={e?.name}
                 dataArr={DataARr}
                 onClick={() => router.push(`/dashboard/lesson/${e?.id}/vidoe`)}
 
