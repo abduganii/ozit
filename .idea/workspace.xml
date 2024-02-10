@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="video added and axios init added">
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.js" afterDir="false" />
+    <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="unauth page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/dashboard/home/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/dashboard/home/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/dashboard/home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/dashboard/home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/axios_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/axios_init.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +39,12 @@
     }
   }
 }</component>
-  <component name="GitLabMergeRequestsSettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "first": "https://gitlab.com/incorp-team/uzit/front.git",
-    "second": "00551c4a-6378-4ee8-a310-3a09ad4ad409"
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://gitlab.com/incorp-team/uzit/front.git&quot;,
+    &quot;second&quot;: &quot;00551c4a-6378-4ee8-a310-3a09ad4ad409&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -147,7 +150,9 @@
       <workItem from="1706609069437" duration="1133000" />
       <workItem from="1706885459667" duration="1799000" />
       <workItem from="1706943850479" duration="4519000" />
-      <workItem from="1707229825349" duration="731000" />
+      <workItem from="1707229825349" duration="1315000" />
+      <workItem from="1707404019388" duration="2612000" />
+      <workItem from="1707499336441" duration="1290000" />
     </task>
     <task id="LOCAL-00001" summary="auth providers added">
       <option name="closed" value="true" />
@@ -157,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706373387160</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="unauth page">
+      <option name="closed" value="true" />
+      <created>1707231057531</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707231057531</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +190,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="auth providers added" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth providers added" />
+    <MESSAGE value="unauth page" />
+    <option name="LAST_COMMIT_MESSAGE" value="unauth page" />
   </component>
 </project>

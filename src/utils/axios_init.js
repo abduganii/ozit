@@ -1,7 +1,6 @@
-'use client';
 
 import axios from 'axios'
-import ss from "@/utils/ls"
+// import ss from "@/utils/ls"
 import qs from 'qs'
 import 'dotenv/config'
 
@@ -52,16 +51,16 @@ export default {
         console.log('call api: ', url)
         console.log('BASE URL: ', baseUrl)
         const config = {
-            baseURL: baseUrl || 'https://jsonplaceholder.typicode.com',
+            baseURL: 'http://137.184.229.211:8000/api/v1',
             timeout: 120000,
             url: url,
             method: method
         }
-        if (ss.g('token')) {
-            config.headers = {
-                Authorization: 'Bearer ' + ss.g('token'),
-            }
-        }
+        // if (ss.g('token')) {
+        //     config.headers = {
+        //         Authorization: 'Bearer ' + ss.g('token'),
+        //     }
+        // }
         if (data) config.data = data
 
         if (params) {
