@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="unauth page">
+    <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="data fetch with axios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/dashboard/home/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/dashboard/home/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/dashboard/home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/dashboard/home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/axios_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/axios_init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/vimeo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/vimeo/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +150,7 @@
       <workItem from="1706943850479" duration="4519000" />
       <workItem from="1707229825349" duration="1315000" />
       <workItem from="1707404019388" duration="2612000" />
-      <workItem from="1707499336441" duration="1290000" />
+      <workItem from="1707499336441" duration="3481000" />
     </task>
     <task id="LOCAL-00001" summary="auth providers added">
       <option name="closed" value="true" />
@@ -170,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707231057531</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="data fetch with axios">
+      <option name="closed" value="true" />
+      <created>1707573856052</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707573856052</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +197,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="auth providers added" />
     <MESSAGE value="unauth page" />
-    <option name="LAST_COMMIT_MESSAGE" value="unauth page" />
+    <MESSAGE value="data fetch with axios" />
+    <option name="LAST_COMMIT_MESSAGE" value="data fetch with axios" />
   </component>
 </project>
