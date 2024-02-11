@@ -3,7 +3,8 @@ import LessonTextCard from '@/components/UI/card/lesson-text'
 import cls from './lessons.module.scss'
 
 
-export default function LassonExercises() {
+export default function LassonExercises({ data }) {
+  console.log(data)
   return (
     <div className={cls.LassonPage}>
       

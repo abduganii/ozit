@@ -2,7 +2,8 @@ import Image from 'next/image'
 import { DownBlackIcons } from '../../icon'
 import cls from './sprintBalck.module.scss'
 
-export default function SprntBalcCard({title,isCurrent,openMadal,dataArr=[]}) {
+export default function SprntBalcCard({ title, isCurrent,sprint, openMadal, dataArr = [] }) {
+  
   return (
     <div className={`${cls.SprntBalcCard} ${isCurrent && cls.SprntBalcCard__active}`}>
           <div className={cls.SprntBalcCard__top} onClick={openMadal}>
@@ -25,8 +26,8 @@ export default function SprntBalcCard({title,isCurrent,openMadal,dataArr=[]}) {
                 alt={"img"}
               />
               <div className={cls.SprntBalcCard__list__left}>
-                <p>{e?.title}</p>
-                <h3>{ e?.text}</h3>
+                <p>S{sprint} L{e?.step }</p>
+                <h3>{ e?.title}</h3>
               </div>
             </div>
           ))

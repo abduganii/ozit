@@ -1,5 +1,4 @@
 const getElementSize = (e) => {
-console.log();
     return {
         width: e?.clientWidth || 0,
         height: e?.clientHeight || 0,

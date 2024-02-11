@@ -72,16 +72,16 @@ const lessonArr = [
   }
 ]
 
-export default function LassonLoayout({ children }) {
+export default function LassonLoayout({data, children }) {
   const {id} = useParams()
-    const [openMadl,setOpenMal] = useState(false)
+  const [openMadl, setOpenMal] = useState(false)
   return (
     <div className={cls.LassonLoayout}>
       <div className={cls.LassonLoayout__content}>
         <DashboardHeader
           OpenMadal={()=> setOpenMal(true)}
           sprintId={id}
-          currentLesson={"Sprint 1 · Lesson 1"}
+          currentLesson={`Sprint 1 · Lesson 1`}
         />
       {children}
       </div>
@@ -100,7 +100,7 @@ export default function LassonLoayout({ children }) {
       </div>
 
       {
-        openMadl ? <LessonMadal lessonArr={lessonArr} close={()=>setOpenMal(false)}/>:""
+        openMadl ? <LessonMadal lessonArr={data} close={()=>setOpenMal(false)}/>:""
       }
     </div>
   )

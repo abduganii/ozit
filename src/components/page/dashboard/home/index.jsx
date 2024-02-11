@@ -1,6 +1,5 @@
 'use client'
 import SprintCard from '@/components/UI/card/sprint-card'
-import {useRouter} from 'next/navigation'
 import cls from './home.module.scss'
 
 const DataARr = [
@@ -27,22 +26,21 @@ const DataARr = [
     }
 ]
 export default function DashboardHomePage({data}) {
-    const router = useRouter()
+    
   
-    console.log('DashboardHomePage', data)
+    // console.log('DashboardHomePage', data)
     return (
         <div className={cls.DashboardHomePage}>
             {/* <VimeoPlayer/> */}
-            {data?.length && data?.map(e => (
+            {data?.course_sprints?.length && data?.course_sprints?.map(e => (
                 <SprintCard
                 key={e?.id}
                 lectures={"12 lectures"}
                 min={"160 min"}
                 exercises={"24 exercises"}
-                title={e?.name}
-                dataArr={DataARr}
-                onClick={() => router.push(`/dashboard/lesson/${e?.id}/vidoe`)}
-
+                title={e?.title}
+                step={e?.step}
+                dataArr={e?.sprint_lessons}
             />
             ))}
           

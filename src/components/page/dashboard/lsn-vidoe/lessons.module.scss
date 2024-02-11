@@ -5,6 +5,12 @@
 
     width: 100%;
 
+    &__vidoe {
+        width: 100%;
+        aspect-ratio: calc(16/9);
+        overflow: hidden;
+
+    }
 
     &::-webkit-scrollbar {
         display: none;

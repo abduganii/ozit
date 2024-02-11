@@ -17,12 +17,13 @@ export default function LessonMadal({ lessonArr, close }) {
                   <div className={cls.LessonMadal__top__delete}  onClick={close}><DeleteIcons color={"white"}/></div>
             </div> 
 
-              {lessonArr?.length &&  <div className={cls.LessonMadal__lesson}>
-                  {lessonArr?.map(e => (
+              {lessonArr?.course_sprints?.length &&  <div className={cls.LessonMadal__lesson}>
+                  {lessonArr?.course_sprints?.map(e => (
                       <SprntBalcCard
                         key={e?.id}
-                        title={e?.title}
-                        dataArr={e?.data}
+                        title={`Sprint ${e?.step}. ${e?.title}`}
+                        dataArr={e?.sprint_lessons}
+                        sprint={e?.step}
                         isCurrent={e?.id == CurrentId ? true : false}
                         openMadal={()=>setCurrentId(state => state ==e?.id ? false: e?.id )}
                       />

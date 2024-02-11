@@ -69,21 +69,21 @@
     &__exercises {
         padding: 16px 0;
         border-bottom: 1px solid rgba(8, 18, 38, 0.10);
-
         &__flex {
             display: flex;
             align-items: center;
             gap: 8px;
             margin-bottom: 12px;
         }
-
+        
         &__flex1 {
             display: flex;
             align-items: center;
             gap: 4px;
         }
-
+        
         &__title {
+            cursor: pointer;
             color: #081226;
             font-family: "Helvetica Neue";
             font-size: 16px;

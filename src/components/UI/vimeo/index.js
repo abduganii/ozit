@@ -3,10 +3,11 @@
 
 import Vimeo from '@u-wave/react-vimeo';
 
-const VimeoPlayer = (props) => {
+const VimeoPlayer = ({videoId}) => {
     return (
         <Vimeo
-            video={28058097}
+            className='vimeo'
+            video={videoId? videoId: 28058097}
             responsive={true}
             autoplay={false}
             color="525CEB"
