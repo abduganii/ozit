@@ -1,8 +1,7 @@
-
 import axios from 'axios'
-// import ss from "@/utils/ls"
 import qs from 'qs'
 import 'dotenv/config'
+// import Cookies from 'js-cookie';
 
 const baseUrl = process.env.NEXT_BASE_URL
 function unauthorized(msg) {
@@ -18,47 +17,21 @@ function ErrorHandler(error) {
     }
     if (error.response) {
         console.log('error.response', error.response)
-        // switch (error.response.status) {
-        //     case 400:
-        //         console.error('400 bad request', error.response.data.error.message)
-        //         break
-        //     case 401:
-        //         unauthorized(error.response.data)
-        //         break
-        //     case 403:
-        //         console.error('403 forbidden', error.response.data.error.message)
-        //         break
-        //     case 404:
-        //         console.error('404 not found', error.response.data.error.message)
-        //         break
-        //     case 422:
-        //         console.error('422 entity', error.response.data.error.message)
-        //         break
-        //     case 500:
-        //         console.error('500 internal server error', error.response.data.error.message)
-        //         break
-        //     case 502:
-        //         console.error('502 getaway', error.response.data.error.message)
-        //         break
-        //     default:
-        //         break
-        // }
     }
 }
 
 export default {
     request(method, url, params, data) {
-        console.log('call api: ', url)
-        console.log('BASE URL: ', baseUrl)
         const config = {
             baseURL: 'http://137.184.229.211:8000/api/v1',
             timeout: 120000,
             url: url,
             method: method
         }
-        // if (ss.g('token')) {
+        // const token = Cookies.get('token')
+        // if (token) {
         //     config.headers = {
-        //         Authorization: 'Bearer ' + ss.g('token'),
+        //         Authorization: 'Bearer ' + token,
         //     }
         // }
         if (data) config.data = data

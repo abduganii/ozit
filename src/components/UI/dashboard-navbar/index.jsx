@@ -11,6 +11,10 @@ import { DeleteWhiteIcons, DocsIcons, FlyIcons, LogoIcons, LogoutIcons } from '.
 import PaPap from '../madal/papap-modal'
 import SettingMadal from '../madal/setting-madal'
 import cls from './dashboardNavbar.module.scss'
+import {signIn, signOut, useSession } from "next-auth/react";
+import {log} from "next/dist/server/typescript/utils";
+
+
 
 export default function DashboardNavabr() {
   const pathname = usePathname()
@@ -22,6 +26,13 @@ export default function DashboardNavabr() {
   const [subscription, setSubscription] = useState(false)
   const [logout, setlogout] = useState(false)
   const router = useRouter()
+    const logOut = async () => {
+        console.log('logOut')
+        await signOut('google')
+        Cookies.remove('token')
+        router.push('/home')
+        router.refresh();
+    }
   
   return (
     <div className={cls.DashboardNavabr}>
@@ -75,12 +86,7 @@ export default function DashboardNavabr() {
         title={"Log out "}
         text={"Are you sure you want to leave from your account? "}
         btnText={"Log out "}
-        logout={() =>  {
-          Cookies.remove('token')
-          router.push('/home')
-          router.refresh();
-
-        }}
+        logout={logOut()}
         close={() => setlogout(false)} />
         : ""}
         {openDelete ? <PaPap
