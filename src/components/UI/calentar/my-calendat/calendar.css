@@ -2,3 +2,11 @@
     width: 100% !important;
    border: none !important;
   }
+
+  .react-calendar__month-view__days__day--weekend{
+    color: black !important;
+  }
+
+  .react-calendar__tile{
+    padding: 15px 10px;
+  }

@@ -44,6 +44,7 @@ export default function Header(props) {
                         <GlobalBtn onClick={() => signOut({ callbackUrl: 'http://localhost:3000' })} className={cls.Header__btn__login}>Log out({session.user.name})</GlobalBtn> :
                         <GlobalBtn onClick={() => signIn()} className={cls.Header__btn__login}>Git/Google</GlobalBtn>
                     } */}
+                    <GlobalBtn onClick={() => signIn()} className={cls.Header__btn__login}>Git/Google</GlobalBtn>
                     <GlobalBtn className={cls.Header__btn__sign} onClick={()=>router.push('/auth/login')}>Sign up</GlobalBtn>
                     <GlobalBtn className={cls.Header__btn__login}>En <DowndIcons/></GlobalBtn>
                 </div>

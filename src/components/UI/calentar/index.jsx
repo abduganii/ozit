@@ -36,10 +36,10 @@ export default function Calentar() {
             </div>
           ))}
         </div>
-        <div className={cls.Calentar__left__set}>
+        {/* <div className={cls.Calentar__left__set}>
             <p>Cookie settings</p>
             <p>Report abuse</p>
-        </div>
+        </div> */}
         </div>
           <div className={cls.Calentar__right}>
         <h3 className={cls.Calentar__right__title}>Select a Date & Time</h3>  

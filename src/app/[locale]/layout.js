@@ -1,5 +1,7 @@
 import NextTopLoader from 'nextjs-toploader';
 import { dir } from 'i18next'
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/utils/auth";
 import i18nConfig from '../../../i18nConfig'
 import '../../style/globals.css'
 import { cookies } from 'next/headers'
@@ -15,13 +17,14 @@ export  function generateStaticParams() {
 }
 
 
-export default  function  RootLayout({
+export default async function  RootLayout({
   children,
   params: { locale }
 }) {
     const token = cookies().get("token")?.value|| null
     // const data =  getData()
-   
+  const session = await getServerSession(authOptions);
+  console.log(session, "session")
   return (
     <html lang={locale} dir={dir(locale)}>
       <body >
