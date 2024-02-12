@@ -15,7 +15,7 @@ export const metadata = {
 export  function generateStaticParams() {
   return i18nConfig.locales.map(locale => ({ locale }));
 }
-
+import Cookies from 'js-cookie';
 
 export default async function  RootLayout({
   children,
@@ -39,6 +39,7 @@ export default async function  RootLayout({
         speed={200}
         shadow="0 0 10px #2299DD,0 0 5px #2299DD"
         />
+
         {
           token ? <AuthLayout>
             {children}
