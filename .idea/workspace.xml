@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="data fetch with axios">
+    <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="vimeo updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/vimeo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/vimeo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/auth/login/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/auth/login/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/dashboard-navbar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/dashboard-navbar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/main-layout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/main-layout/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/auth/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/auth/login/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/axios_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/axios_init.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +157,8 @@
       <workItem from="1706943850479" duration="4519000" />
       <workItem from="1707229825349" duration="1315000" />
       <workItem from="1707404019388" duration="2612000" />
-      <workItem from="1707499336441" duration="3481000" />
+      <workItem from="1707499336441" duration="4367000" />
+      <workItem from="1707741766971" duration="6377000" />
     </task>
     <task id="LOCAL-00001" summary="auth providers added">
       <option name="closed" value="true" />
@@ -176,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707573856052</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="vimeo updated">
+      <option name="closed" value="true" />
+      <created>1707575888455</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707575888455</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +214,7 @@
     <MESSAGE value="auth providers added" />
     <MESSAGE value="unauth page" />
     <MESSAGE value="data fetch with axios" />
-    <option name="LAST_COMMIT_MESSAGE" value="data fetch with axios" />
+    <MESSAGE value="vimeo updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="vimeo updated" />
   </component>
 </project>

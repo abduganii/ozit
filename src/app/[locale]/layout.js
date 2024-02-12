@@ -7,6 +7,8 @@ import '../../style/globals.css'
 import { cookies } from 'next/headers'
 import AuthLayout from '@/components/layout/auth-layout'
 import MainLayout from '@/components/layout/main-layout'
+import axios_init  from "@/utils/axios_init";
+import Cookies from 'js-cookie';
 
 export const metadata = {
   title: 'Uz IT',
@@ -21,10 +23,8 @@ export default async function  RootLayout({
   children,
   params: { locale }
 }) {
-    const token = cookies().get("token")?.value|| null
-    // const data =  getData()
-  const session = await getServerSession(authOptions);
-  console.log(session, "session")
+    const token = cookies().get("token")
+    const session = await getServerSession(authOptions);
   return (
     <html lang={locale} dir={dir(locale)}>
       <body >
@@ -44,7 +44,7 @@ export default async function  RootLayout({
           token ? <AuthLayout>
             {children}
           </AuthLayout> :
-            <MainLayout>
+            <MainLayout session={session}>
           {children}
           </MainLayout>
         }

@@ -9,23 +9,36 @@ import AuthMadala from "@/components/UI/madal/auth-madal"
 import Image from "next/image"
 import { useState } from "react"
 import cls from "./auth.module.scss"
+import {signIn, signOut, useSession } from "next-auth/react";
 import Cookies from 'js-cookie';
 import { useRouter } from "next/navigation"
-export default function LoginPage() {
+import { useEffect } from "react"
+import axios_init from "@/utils/axios_init"
+export default function LoginPage({ session }) {
   const [openMadal, setOpenMadal] = useState(false)
   const router = useRouter()
-  
+    useEffect(() => {
+        const token = Cookies.get('token')
+        const logIn = async () => {
+            const login = await axios_init.post('/accounts/google/', {
+                user_token: session['id_token'],
+            })
+            Cookies.set('token', login.tokens.access)
+            router.push('/dashboard/home')
+            router.refresh()
+        }
+        if (!token && session && session['id_token']) {
+            logIn()
+        }
+    }, [])
   return (
     <div className={cls.LoginPage}>
       <div className={cls.LoginPage__contect}>
         <h3 className={cls.LoginPage__contect__title}>Log in</h3>
         <p className={cls.LoginPage__contect__text}>Welcome back! Please login to your account</p>
-        <button className={`${cls.LoginPage__contect__btn} ${cls.LoginPage__contect__goole}`} onClick={() => {
-          Cookies.set('token', "true")
-          router.push('/dashboard/home')
-          router.refresh();
-
-        }}><div><GoogleIcons/> </div> Log in with Google</button>
+        <button className={`${cls.LoginPage__contect__btn} ${cls.LoginPage__contect__goole}`} onClick={() => signIn('google', {
+            callbackUrl: 'http://localhost:3000/auth/login',
+        })}><div><GoogleIcons/> </div> Log in with Google</button>
         <button className={`${cls.LoginPage__contect__btn} ${cls.LoginPage__contect__Apply}`}><ApllyIcons /> Log in with Apple</button>
         <p className={cls.LoginPage__contect__disc}>By logging in, you agree to our Privacy Policy and Terms of Service.</p>
         <button className={cls.LoginPage__contect__sigup} onClick={()=>setOpenMadal(1)}>Don’t have an account?  <span>Sign up</span></button>

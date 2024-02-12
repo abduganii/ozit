@@ -16,6 +16,7 @@ export const authOptions = {
         async session({ session, token, user }) {
             session.user.id = token.id;
             session.accessToken = token.accessToken;
+            session.id_token = token.id_token;
             return session;
         },
         async jwt({ token, user, account, profile, isNewUser }) {
@@ -24,6 +25,7 @@ export const authOptions = {
             }
             if (account) {
                 token.accessToken = account.access_token;
+                token.id_token = account.id_token;
             }
             return token;
         },
