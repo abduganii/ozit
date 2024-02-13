@@ -1,8 +1,7 @@
 
+import initTranslations from '@/app/i18n';
 import HomePage from '@/components/page/home/home';
 import TranslationsProvider from '@/components/TranslationsProvider';
-import initTranslations from '../../i18n';
-
 
 const i18nNamespaces = ['home'];
 export default async function Home({ params: { locale } }) {

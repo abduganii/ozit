@@ -2,17 +2,11 @@
 import Footer from '@/components/UI/footer'
 import Header from '@/components/UI/header'
 import React, { useEffect } from 'react'
-import { useRouter } from 'next/navigation';
-export default async function MainLayout({ children, session }) {
-    const router = useRouter()
-    useEffect(() => {
-        router.push('/home')
-
-    },[])
+export default async function MainLayout(props) {
     return (
         <>
-            <Header session={session}/>
-            {children}
+            <Header session={props?.session}/>
+            {props?.children}
             <Footer />
         </>
     )

@@ -9,27 +9,27 @@ const arr = [
     {
         id: 1,
         text: "Curriculum",
-        link: "/curriculum"
+        link: "/home/curriculum"
     },
     {
         id: 2,
         text: "About us",
-        link: "/about-us"
+        link: "/home/about-us"
     },
     {
         id: 4,
         text: "Consultation",
-        link: "/consultation"
+        link: "/home/consultation"
     },
     {
         id: 32,
         text: "Blog",
-        link: "/blog"
+        link: "/home/blog"
     },
     {
         id: 3,
         text: "Price",
-        link: "/price"
+        link: "/home/price"
     },
   
     // {

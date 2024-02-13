@@ -26,11 +26,10 @@ export default function DashboardNavabr() {
   const [subscription, setSubscription] = useState(false)
   const [logout, setlogout] = useState(false)
   const router = useRouter()
-    const logOut = async () => {
-        console.log('logOut')
+    const logOutFunciton = async () => {
         await signOut('google')
         Cookies.remove('token')
-        router.push('/home')
+      
         router.refresh();
     }
   
@@ -78,25 +77,31 @@ export default function DashboardNavabr() {
       {openAccount ? <AccountSet close={() => setopenAccount(false)}
         openPassword={() => setopenPassword(true)}
         openDelete={() => setopenDelete(true)} /> : ""}
+      
       {openPassword ? <ChangePassword close={() => setopenPassword(false)} /> : ""}
       
-      {logout ? <PaPap
+      {
+        logout ? <PaPap
         color={"#F2F2F2"}
         icons={LogoutIcons()}
         title={"Log out "}
         text={"Are you sure you want to leave from your account? "}
         btnText={"Log out "}
-        logout={logOut()}
+        logout={()=>logOutFunciton()}
         close={() => setlogout(false)} />
-        : ""}
-        {openDelete ? <PaPap
+          : ""
+      }
+      
+      {
+        openDelete ? <PaPap
         color={"#E32A1A"}
         icons={DeleteWhiteIcons()}
         title={"Delete account "}
         text={"re you sure you want to delete your account? "}
         btnText={"Delete"}
         close={() => setopenDelete(false)} />
-        : ""}
+          : ""
+      }
       
       {subscription?
         <Subscription close={() => setSubscription(false)} />

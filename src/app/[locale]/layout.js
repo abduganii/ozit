@@ -5,10 +5,7 @@ import { authOptions } from "@/utils/auth";
 import i18nConfig from '../../../i18nConfig'
 import '../../style/globals.css'
 import { cookies } from 'next/headers'
-import AuthLayout from '@/components/layout/auth-layout'
-import MainLayout from '@/components/layout/main-layout'
-import axios_init  from "@/utils/axios_init";
-import Cookies from 'js-cookie';
+import PageLayout from '@/components/layout/page-layout';
 
 export const metadata = {
   title: 'Uz IT',
@@ -17,7 +14,7 @@ export const metadata = {
 export  function generateStaticParams() {
   return i18nConfig.locales.map(locale => ({ locale }));
 }
-import Cookies from 'js-cookie';
+
 
 export default async function  RootLayout({
   children,
@@ -39,15 +36,9 @@ export default async function  RootLayout({
         speed={200}
         shadow="0 0 10px #2299DD,0 0 5px #2299DD"
         />
-
-        {
-          token ? <AuthLayout>
-            {children}
-          </AuthLayout> :
-            <MainLayout session={session}>
+        <PageLayout token={token} session={session}>
           {children}
-          </MainLayout>
-        }
+        </PageLayout>
       </body>
     </html>
   )
