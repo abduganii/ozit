@@ -1,5 +1,4 @@
 "use client"
-
 import BlueBtn from "@/components/UI/button/blue-btn"
 import GlobalBtn from "@/components/UI/button/global-btn"
 import AuthInputMask from "@/components/UI/form/auth-input"
@@ -31,6 +30,8 @@ export default function LoginPage({ session }) {
             logIn()
         }
     }, [])
+  
+  
   return (
     <div className={cls.LoginPage}>
       <div className={cls.LoginPage__contect}>
@@ -38,7 +39,7 @@ export default function LoginPage({ session }) {
         <p className={cls.LoginPage__contect__text}>Welcome back! Please login to your account</p>
         <button className={`${cls.LoginPage__contect__btn} ${cls.LoginPage__contect__goole}`}
           onClick={() => signIn('google', {
-            callbackUrl: 'http://localhost:3000/auth/login'
+            callbackUrl: `${window.location.origin}/auth/login`
         })}><div><GoogleIcons/> </div> Log in with Google</button>
         <button className={`${cls.LoginPage__contect__btn} ${cls.LoginPage__contect__Apply}`}><ApllyIcons /> Log in with Apple</button>
         <p className={cls.LoginPage__contect__disc}>By logging in, you agree to our Privacy Policy and Terms of Service.</p>

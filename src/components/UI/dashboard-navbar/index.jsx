@@ -29,7 +29,6 @@ export default function DashboardNavabr() {
     const logOutFunciton = async () => {
         await signOut('google')
         Cookies.remove('token')
-      
         router.refresh();
     }
   
