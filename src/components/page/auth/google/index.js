@@ -10,12 +10,14 @@ export default function GooglePage({ session }) {
     useEffect(() => {
         const token = Cookies.get('token')
       const logIn = async () => {
-       await fetch('https://aluframe.jdu.uz/api/clients', {
+       await fetch('https://jsonplaceholder.typicode.com/posts', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify("hello"),
+         body: JSON.stringify({
+          user_token: session['id_token'],
+          }),
         });
           // const login = await axios_init.post('/accounts/google/', {
           //     user_token: session['id_token'],
