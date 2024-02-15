@@ -23,7 +23,7 @@ function ErrorHandler(error) {
 export default {
     request(method, url, params, data) {
         const config = {
-            baseURL: 'http://137.184.229.211:8000/api/v1',
+            baseURL: 'https://api-uzit.kebyo.me/api/v1',
             timeout: 120000,
             url: url,
             method: method
