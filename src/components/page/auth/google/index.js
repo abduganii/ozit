@@ -10,7 +10,7 @@ export default function GooglePage({ session }) {
     useEffect(() => {
         const token = Cookies.get('token')
       const logIn = async () => {
-       await fetch('https://aluframe.jdu.uz/api', {
+       await fetch('https://aluframe.jdu.uz/api/clients', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
