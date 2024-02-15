@@ -34,9 +34,9 @@ export default function LoginPage() {
     await axios_init.post('/accounts/confirm/phone-number/', data)
       .then(res => {
         Cookies.set('token', res.tokens.access)
-        if (res.status == "active") {
+        // if (res.status == "active") {
           router.push('/dashboard/home')
-        }
+        // }
       })
     .catch(err => console.error("err",err))
     
