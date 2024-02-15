@@ -83,7 +83,7 @@ export default async function HomePage({ lang }) {
                 </div>
                 <DoProject />
                 <ProgramSection />
-           
+
                 <h3 className={cls.HomePage__forwho}>Отзывы</h3>
 
                 <SwiperWithScrollIcons slidesPerView={3} >
@@ -130,9 +130,9 @@ export default async function HomePage({ lang }) {
                             name={"Arlene McCoy"}
                             position={"Frontend developer @Uzummarket"}
                     />
-                  </SwiperWithScrollIcons> 
-                
-                
+                  </SwiperWithScrollIcons>
+
+
                 <h3 className={cls.HomePage__forwho}>We can help you find a job, even if you have no IT experience</h3>
 
                 <div className={cls.HomePage__info}>
@@ -162,7 +162,7 @@ export default async function HomePage({ lang }) {
             </Container>
             <div className={cls.HomePage__reclama}>
                 <Container>
-                    <h3 className={cls.HomePage__reclama__title}>Try any format of the course for free - you can choose
+                    <h3 className={cls.HomePage__reclama__title}>Try any format of the courseof the course for free - you can choose
                         a one-size-fits-all later</h3>
                     <div className={cls.HomePage__info}>
 
@@ -183,10 +183,10 @@ export default async function HomePage({ lang }) {
             </div>
             <Container>
 
-           
+
                 <h3 className={cls.HomePage__forwho}>Blogs</h3>
                 <SwiperWithScrollIcons  slidesPerView={3.5}>
-                    
+
                     <BlogsCard
                         id={22}
                         img={'/Home/learninmonths-hover.png'}

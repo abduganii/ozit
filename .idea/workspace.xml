@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="auth added">
+    <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="auth bug fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/home/curriculum/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/home/curriculum/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/card/language-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/card/language-card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/curriculum/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/curriculum/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/home/components/program/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/home/components/program/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/home/home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +157,7 @@
       <workItem from="1707499336441" duration="4367000" />
       <workItem from="1707741766971" duration="6377000" />
       <workItem from="1707973121912" duration="1127000" />
+      <workItem from="1708005815815" duration="1497000" />
     </task>
     <task id="LOCAL-00001" summary="auth providers added">
       <option name="closed" value="true" />
