@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react'
 import { usePathname, useRouter } from 'next/navigation';
-export default async function PageLayout(props) {
+export default function PageLayout(props) {
     const router = useRouter()
     const pathName = usePathname()
     
@@ -19,7 +19,7 @@ export default async function PageLayout(props) {
     )
     return (
         <>
-           
+        
             {props?.children}
         </>
     )

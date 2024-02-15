@@ -11,7 +11,6 @@ export default function AuthLayout(props) {
             if (!props.token) {
                 router.push('/home')
             } 
-            
         },
     [pathName]
     )
