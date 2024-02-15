@@ -4,8 +4,8 @@ export const authOptions = {
     secret: process.env.NEXTAUTH_SECRET,
     providers: [
         GoogleProvider({
-            clientId: '311990013045-kuat36jlivpd7ltm6i8vslna4341anhj.apps.googleusercontent.com',
-            clientSecret: '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'
+            clientId: '696542554767-mp57vtft14gq1df24p4mcrool8ki78rd.apps.googleusercontent.com',
+            clientSecret: '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'
         }),
         Github({
             clientId: '69148f5c7fef7d196420',
