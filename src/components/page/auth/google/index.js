@@ -25,7 +25,7 @@ export default function GooglePage({ session }) {
           
       
           // if (login?.status == "active") {
-            Cookies.set('token', login.tokens.access)
+            Cookies.set('token',"login.tokens.access")
             router.push('/dashboard/home')
           // } else if (login?.status == "created") {
           //   Cookies.set('token', login.tokens.access)
