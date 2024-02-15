@@ -1,4 +1,4 @@
-
+"use client"
 import GlobalBtn from '@/components/UI/button/global-btn'
 import Calentar from '@/components/UI/calentar'
 import Container from '@/components/UI/container'

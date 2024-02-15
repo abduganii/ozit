@@ -1,7 +1,7 @@
 import axios from 'axios'
 import qs from 'qs'
 import 'dotenv/config'
-// import Cookies from 'js-cookie';
+import Cookies from 'js-cookie';
 
 const baseUrl = process.env.NEXT_BASE_URL
 function unauthorized(msg) {
@@ -28,12 +28,12 @@ export default {
             url: url,
             method: method
         }
-        // const token = Cookies.get('token')
-        // if (token) {
-        //     config.headers = {
-        //         Authorization: 'Bearer ' + token,
-        //     }
-        // }
+        const token = Cookies.get('token')
+        if (token) {
+            config.headers = {
+                Authorization: 'Bearer ' + token,
+            }
+        }
         if (data) config.data = data
 
         if (params) {
