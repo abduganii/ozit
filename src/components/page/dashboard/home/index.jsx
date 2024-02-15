@@ -27,8 +27,6 @@ const DataARr = [
 ]
 export default function DashboardHomePage({data}) {
     
-  
-    // console.log('DashboardHomePage', data)
     return (
         <div className={cls.DashboardHomePage}>
             {/* <VimeoPlayer/> */}

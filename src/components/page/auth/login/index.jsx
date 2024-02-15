@@ -41,7 +41,6 @@ export default function LoginPage() {
     .catch(err => console.error("err",err))
     
   }
-  console.log(window.location.origin)
   return (
     <div className={cls.LoginPage}>
       <div className={cls.LoginPage__contect}>
