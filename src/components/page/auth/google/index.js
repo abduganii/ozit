@@ -24,13 +24,13 @@ export default function GooglePage({ session }) {
           // })
           
       
-          if (login?.status == "active") {
+          // if (login?.status == "active") {
             Cookies.set('token', login.tokens.access)
             router.push('/dashboard/home')
-          } else if (login?.status == "created") {
-            Cookies.set('token', login.tokens.access)
-            router.push('/auth/login?opnemadal=1')
-          }
+          // } else if (login?.status == "created") {
+          //   Cookies.set('token', login.tokens.access)
+          //   router.push('/auth/login?opnemadal=1')
+          // }
         }
         if (!token &&session && session['id_token']) {
             logIn()
