@@ -24,19 +24,23 @@ export default function LoginPage() {
  
   
   const RegisterPhone = async (data) => { 
-    await axios_init.post('/accounts/register/phone-number/', data)
+    await axios_init.post('/accounts/register/phone-number/', {
+      phone_number: data.phone_number.replaceAll("-", "").replaceAll(" ", ""),
+    })
     .then(res =>  setOpenMadal(2))
     .catch(err => console.error(err))
   
   }
   
   const ConfirmPhone = async (data) => {
-    await axios_init.post('/accounts/confirm/phone-number/', data)
+    await axios_init.post('/accounts/confirm/phone-number/', {
+      code:data.code,
+      phone_number: data.phone_number.replaceAll("-", "").replaceAll(" ", ""),
+    })
       .then(res => {
-        Cookies.set('token', res.tokens.access)
-        // if (res.status == "active") {
+     
           router.push('/dashboard/home')
-        // }
+
       })
     .catch(err => console.error("err",err))
     
