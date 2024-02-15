@@ -56,6 +56,9 @@ button {
 .ReactCollapse--collapse {
   transition: height 500ms;
 }
+iframe >html>body  {
+display: none !important;
+}
 
 
 
