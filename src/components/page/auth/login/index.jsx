@@ -21,7 +21,6 @@ export default function LoginPage() {
   const watchedFiles = watch()
   const router = useRouter()
   const [loader,setLoader] = useState(false)
- 
   
   const RegisterPhone = async (data) => { 
     await axios_init.post('/accounts/register/phone-number/', {

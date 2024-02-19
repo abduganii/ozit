@@ -17,6 +17,7 @@ import BlogsCard from "@/components/UI/card/blogs-card";
 import Faq from "./components/faq";
 import SwiperWithScrollIcons from "@/components/UI/Swiper";
 import VimeoPlayer from "@/components/UI/vimeo";
+import VidoeHomeCard from "./components/vidoe-card";
 
 export default async function HomePage({ lang }) {
 
@@ -83,7 +84,15 @@ export default async function HomePage({ lang }) {
                 </div>
                 <DoProject />
                 <ProgramSection />
-           
+                <div className={cls.HomePage__Available}><p>Available lessons</p></div>
+                <h3 className={cls.HomePage__forwho} style={{ marginTop: "0", maxWidth: "408px" }}>Get started now with free lessons</h3>
+                <SwiperWithScrollIcons slidesPerView={1} >
+                <VidoeHomeCard/>
+                <VidoeHomeCard/>
+                <VidoeHomeCard/>
+                <VidoeHomeCard/>
+                </SwiperWithScrollIcons>
+            
                 <h3 className={cls.HomePage__forwho}>Отзывы</h3>
 
                 <SwiperWithScrollIcons slidesPerView={3} >

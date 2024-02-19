@@ -1,0 +1,62 @@
+.VidoeHomeCard {
+    width: 100%;
+    max-width: 1050px;
+    border-radius: 24px;
+    height: 590px;
+    background-image: url('/Home/Frame.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__card {
+        border-radius: 100px;
+        background: rgba(255, 255, 255, 0.11);
+        backdrop-filter: blur(6px);
+        display: flex;
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__Contect {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+
+        p {
+            display: inline-flex;
+            padding: 6px 13px;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.30);
+            background: rgba(255, 255, 255, 0.40);
+            backdrop-filter: blur(6px);
+            color: #FFF;
+            font-family: "Helvetica Neue";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 16px;
+        }
+
+        h4 {
+            color: var(--FFFFFF, #FFF);
+            font-family: "TT Firs Neue";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            /* 133.333% */
+        }
+
+    }
+}

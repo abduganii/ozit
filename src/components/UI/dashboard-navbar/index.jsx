@@ -13,10 +13,12 @@ import SettingMadal from '../madal/setting-madal'
 import cls from './dashboardNavbar.module.scss'
 import {signIn, signOut, useSession } from "next-auth/react";
 import {log} from "next/dist/server/typescript/utils";
+import Loader from '../loader'
 
 
 
 export default function DashboardNavabr() {
+  const [loader,setLoader] = useState(false)
   const pathname = usePathname()
   const [openMadal, setOpenMadal] = useState(false)
   const [openProfle, setOpenProfle] = useState(false)
@@ -26,7 +28,9 @@ export default function DashboardNavabr() {
   const [subscription, setSubscription] = useState(false)
   const [logout, setlogout] = useState(false)
   const router = useRouter()
-    const logOutFunciton = async () => {
+  const logOutFunciton = async () => {
+      setLoader(true)
+      setlogout(false)
         await signOut('google')
         Cookies.remove('token')
         router.refresh();
@@ -91,7 +95,7 @@ export default function DashboardNavabr() {
           : ""
       }
       
-      {
+      {/* {
         openDelete ? <PaPap
         color={"#E32A1A"}
         icons={DeleteWhiteIcons()}
@@ -100,11 +104,13 @@ export default function DashboardNavabr() {
         btnText={"Delete"}
         close={() => setopenDelete(false)} />
           : ""
-      }
+      } */}
       
       {subscription?
         <Subscription close={() => setSubscription(false)} />
-          :""}
+        : ""}
+      
+        {loader? <Loader/>:""}
     </div>
   )
 }

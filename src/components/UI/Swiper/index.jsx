@@ -26,7 +26,7 @@ export default  function SwiperWithScrollIcons({ children,slidesPerView}) {
         {React.Children.map(children, (child, index) => (
           <SwiperSlide key={index}>{child}</SwiperSlide>
         ))}
-        ...
+        
     </Swiper>
         <div className={cls.swiper__btn}>
             <button onClick={()=>swipers.slidePrev()}><LeftIcons/></button>   
