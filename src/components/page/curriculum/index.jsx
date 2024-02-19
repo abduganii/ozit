@@ -4,15 +4,24 @@ import Container from '@/components/UI/container'
 import cls from './curriculum.module.scss'
 import Hero from './hero'
 
-export default function CurriculumPage() {
+export default function CurriculumPage(props) {
+    const { data } = props
     return (
         <div className={cls.CurriculumPage}>
             <Hero />
             <Container>
                 <div className={cls.CurriculumPage__flex}>
-                    <LanguageCard className={cls.CurriculumPage__card} />
-                    <LanguageCard className={cls.CurriculumPage__card} />
-                    <LanguageCard className={cls.CurriculumPage__card} />
+                    {
+                       data.course_sprints.map(e => {
+                            return <LanguageCard className={cls.CurriculumPage__card} key={e.id} title={e.title} description={e.description} />
+                       })
+                    }
+                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
+                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
+                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
+                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
+                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
+                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
                 </div>
                 <MoreBtn style={{ margin: "108px auto 136px auto " }} />
             </Container>
