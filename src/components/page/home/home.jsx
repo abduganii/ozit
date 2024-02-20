@@ -19,7 +19,7 @@ import SwiperWithScrollIcons from "@/components/UI/Swiper";
 import VimeoPlayer from "@/components/UI/vimeo";
 import VidoeHomeCard from "./components/vidoe-card";
 
-export default async function HomePage({ lang }) {
+export default async function HomePage({ lang ,Curriculum, Blogs}) {
 
     return (
         <main>
@@ -83,7 +83,7 @@ export default async function HomePage({ lang }) {
                     />
                 </div>
                 <DoProject />
-                <ProgramSection />
+                <ProgramSection data={Curriculum} />
 
                 <div className={cls.HomePage__Available}><p>Available lessons</p></div>
                 <h3 className={cls.HomePage__forwho} style={{ marginTop: "0", maxWidth: "408px" }}>Get started now with free lessons</h3>
@@ -193,23 +193,21 @@ export default async function HomePage({ lang }) {
                 </Container>
             </div>
             <Container>
-
-
                 <h3 className={cls.HomePage__forwho}>Blogs</h3>
                 <SwiperWithScrollIcons  slidesPerView={3.5}>
 
-                    <BlogsCard
-                        id={22}
-                        img={'/Home/learninmonths-hover.png'}
-                        title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
-                        date={"7 / 11 / 2023"}
-                    />
-                      <BlogsCard
-                        id={22}
-                        img={'/Home/learninmonths-hover.png'}
-                        title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
-                        date={"7 / 11 / 2023"}
-                    />
+                    {
+                        Blogs && Blogs?.map(e => (
+                            <BlogsCard
+                                key={e?.id}
+                                id={e?.id}
+                                img={e?.image}
+                                title={e?.title}
+                                date={e?.created_at}
+                            /> 
+                        ))
+                    }
+                     
               </SwiperWithScrollIcons>
             </Container>
             <Container style={{marginTop:"146px"}}>

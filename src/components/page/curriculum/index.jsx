@@ -13,15 +13,15 @@ export default function CurriculumPage(props) {
                 <div className={cls.CurriculumPage__flex}>
                     {
                        data.course_sprints.map(e => {
-                            return <LanguageCard className={cls.CurriculumPage__card} key={e.id} title={e.title} description={e.description} />
+                           return <LanguageCard
+                               className={cls.CurriculumPage__card}
+                               key={e.id}
+                               title={e.title}
+                               description={e.description}
+                           />
                        })
                     }
-                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
-                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
-                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
-                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
-                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
-                    {/*<LanguageCard className={cls.CurriculumPage__card} />*/}
+                 
                 </div>
                 <MoreBtn style={{ margin: "108px auto 136px auto " }} />
             </Container>

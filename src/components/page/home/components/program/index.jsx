@@ -1,11 +1,14 @@
+'use client'
 import BlueBtn from '@/components/UI/button/blue-btn'
 import MoreBtn from '@/components/UI/button/more-btn'
 import LanguageCard from '@/components/UI/card/language-card'
 import HomeSing from '@/components/UI/home-sing'
 import { DocIcons } from '@/components/UI/icon'
+import { useRouter } from 'next/navigation'
 import cls from './peogram.module.scss'
 
-export default function ProgramSection() {
+export default function ProgramSection({ data }) {
+    const router = useRouter()
     return (
         <div className={cls.ProgramSection}>
             <div className={cls.ProgramSection__left}>
@@ -19,9 +22,19 @@ export default function ProgramSection() {
             </div>
             <div className={cls.ProgramSection__right}>
                 <BlueBtn className={cls.ProgramSection__right__btn}><DocIcons color={"#2454FF"} />Download the program in PDF</BlueBtn>
-                <LanguageCard style={{ marginBottom: "8px" }} />
-                <LanguageCard />
-                <MoreBtn style={{ margin: "62px auto 0 auto " }} />
+                {
+                       data.course_sprints.map(e => {
+                           return <LanguageCard
+                               className={cls.CurriculumPage__card}
+                               key={e.id}
+                               title={e.title}
+                               style={{ marginBottom: "8px" }} 
+                               description={e.description}
+                           />
+                       })
+                    }
+                
+                <MoreBtn onClick={()=>router.push('/home/curriculum')} style={{ margin: "62px auto 0 auto " }} />
             </div>
         </div>
     )

@@ -1,16 +1,19 @@
 'use client'
 import cls from './blogsid.module.scss'
  
-import { useParams,useRouter } from 'next/navigation'
+import {useRouter } from 'next/navigation'
 import Container from '@/components/UI/container'
 import { BackIcons, FacebookIcons, IconsIcons, Telegram1Icons, TwiterIcons } from '@/components/UI/icon'
 import Image from 'next/image'
 import BlogsCard from '@/components/UI/card/blogs-card'
 import SwiperWithScrollIcons from '@/components/UI/Swiper'
-export default function SingleBlogsPage() {
-    const params = useParams()
+export default function SingleBlogsPage({Blogs,SingleBlogs}) {   
     const router = useRouter()
-    console.log(params.id) //id for single get
+
+    let createAt = new Date(SingleBlogs?.created_at);
+    let Hours = createAt.getHours();
+    let Minutes = createAt.getMinutes();
+    const weeksDay = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     return (
         <div className={cls.SingleBlogsPage}>
             <Container className={cls.SingleBlogsPage__container}>
@@ -41,7 +44,7 @@ export default function SingleBlogsPage() {
                 </div>
 
                 <div className={cls.SingleBlogsPage__content}>
-                    <h3 className={cls.SingleBlogsPage__content__title}>A Deep Dive Into AWS Certifications and the Solutions Architect Exam</h3>
+                    <h3 className={cls.SingleBlogsPage__content__title}>{ SingleBlogs?.title}</h3>
                     <div className={cls.SingleBlogsPage__content__top}>
                         <div className={cls.SingleBlogsPage__content__person}>
                             <Image width={40}
@@ -54,7 +57,7 @@ export default function SingleBlogsPage() {
                         </div>
                         <div className={cls.SingleBlogsPage__content__date}>
                             <h3>Published</h3>
-                            <p>December 5, 2023</p>
+                            <p>{weeksDay[createAt.getDay()]} {Hours}:{Minutes}</p>
                         </div>
                     </div>
                     <Image
@@ -65,7 +68,8 @@ export default function SingleBlogsPage() {
                         alt={"img"}
                     />
                     
-                    <p className={cls.SingleBlogsPage__content__text}>The public cloud market is growing at a staggering rate, as companies of all sizes move their technical architecture away from costly on-site configurations. At the top of this industry is Amazon’s public cloud service, AWS, with $35.4 billion in revenue last year and 38.9% total market share. Its closest competitor, Microsoft’s Azure, saw $19 billion in revenue and 21.1% market share. It’s understandable then that AWS skills are in high demand among companies wanting to scale their backend infrastructure and provide the best possible customer experience.</p>
+                    <p className={cls.SingleBlogsPage__content__text}  dangerouslySetInnerHTML={{ __html: SingleBlogs.content }} />
+                  
                 </div>
 
              
@@ -73,14 +77,17 @@ export default function SingleBlogsPage() {
                 <h3 className={cls.SingleBlogsPage__keep}>Keep reading</h3>
             <Container className={cls.SingleBlogsPage__flex} >
                 <SwiperWithScrollIcons slidesPerView={3}>
-                    
-                 <BlogsCard
-                    id={22}
-                    img={'/Home/learninmonths-hover.png'}
-                    title={"A Deep Dive Into AWS Certifications and the Solutions Architect Exam"}
-                    date={"7 / 11 / 2023"}
-                    
-                    />
+                {
+                        Blogs && Blogs?.map(e => (
+                            <BlogsCard
+                                key={e?.id}
+                                id={e?.id}
+                                img={e?.image}
+                                title={e?.title}
+                                date={e?.created_at}
+                            /> 
+                        ))
+                    }
             </SwiperWithScrollIcons>
             </Container>
         </div>

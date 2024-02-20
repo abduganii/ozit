@@ -18,20 +18,30 @@ const notedArr = [
   // }
 ]
 
-export default function NotesPage() {
+export default function NotesPage({ Notes }) {
+  const dataFuncition = (date) => {
+    const weeksDay = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    let createAt = new Date(date);
+    let Hours = createAt.getHours();
+  
+    let Minutes = createAt.getMinutes();
+    return `${weeksDay[createAt.getDay()]} ${Hours}:${Minutes}`
+    
+ }
+
   return (
     <div className={cls.NotesPage}>
       <h3 className={cls.NotesPage__title}>Notes</h3>
       <p className={cls.NotesPage__text}>Notes, added by administrators during the course</p>
 
-      {notedArr.length ?  notedArr?.map(e => (
+      {Notes.length ?  Notes?.map(e => (
         <div className={cls.NotesPage__list} key={e?.id}>
           <div className={cls.NotesPage__list__top}>
             <h3 >{ e?.title}</h3>
-            <span>{e?.date}</span>
+            <span> {dataFuncition(e?.created_at)} </span>
             {e?.isRead && <div></div>}
           </div>
-          <p className={cls.NotesPage__list__text}>{ e?.text}  <span>learn more</span></p>
+          <p className={cls.NotesPage__list__text} dangerouslySetInnerHTML={{ __html: e?.content }} />  
         </div>
       )):
       <div className={cls.NotesPage__Bell}>
