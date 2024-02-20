@@ -29,6 +29,7 @@ export default {
             method: method
         }
         const token = Cookies.get('token')
+        
         if (token) {
             config.headers = {
                 Authorization: 'Bearer ' + token,
@@ -55,6 +56,7 @@ export default {
                     reject(error)
                 })
         })
+
     },
     get(url, params) {
         return this.request('GET', url, params, undefined)

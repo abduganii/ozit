@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import cls from './noted.module.scss'
 
@@ -41,7 +42,7 @@ export default function NotesPage({ Notes }) {
             <span> {dataFuncition(e?.created_at)} </span>
             {e?.isRead && <div></div>}
           </div>
-          <p className={cls.NotesPage__list__text} dangerouslySetInnerHTML={{ __html: e?.content }} />  
+          {e?.content ? <p dangerouslySetInnerHTML={{ __html: e.content }} /> : null}
         </div>
       )):
       <div className={cls.NotesPage__Bell}>

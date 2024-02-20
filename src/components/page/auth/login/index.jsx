@@ -37,9 +37,7 @@ export default function LoginPage() {
       phone_number: data.phone_number.replaceAll("-", "").replaceAll(" ", ""),
     })
       .then(res => {
-     
           router.push('/dashboard/home')
-
       })
     .catch(err => console.error("err",err))
     
