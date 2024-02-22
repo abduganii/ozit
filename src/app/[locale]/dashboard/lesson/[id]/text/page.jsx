@@ -8,7 +8,6 @@ async function getData(id) {
 
 export default async function page({ params: { id } }) {
   const data = await getData(id)
-      
     return (
       <>
         <LassonText data={data} />

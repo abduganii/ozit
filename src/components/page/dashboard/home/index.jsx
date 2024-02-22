@@ -26,16 +26,16 @@ const DataARr = [
     }
 ]
 export default function DashboardHomePage({data}) {
-    
+        
     return (
         <div className={cls.DashboardHomePage}>
             {/* <VimeoPlayer/> */}
             {data?.course_sprints?.length && data?.course_sprints?.map(e => (
                 <SprintCard
                 key={e?.id}
-                lectures={"12 lectures"}
-                min={"160 min"}
-                exercises={"24 exercises"}
+                lectures={`${e?.num_lectures} lectures`}
+                min={`${e?.duration} min`}
+                exercises={`${e?.num_exercises} exercises`}
                 title={e?.title}
                 step={e?.step}
                 dataArr={e?.sprint_lessons}

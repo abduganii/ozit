@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Collapse } from 'react-collapse'
 import { DownBlackIcons } from '../../icon'
 import cls from './sprintBalck.module.scss'
 
@@ -14,7 +15,8 @@ export default function SprntBalcCard({ title, isCurrent,sprint, openMadal, data
                       <DownBlackIcons/>
                   </div>
             </div>
-        </div>
+      </div>
+      <Collapse isOpened={dataArr?.length & isCurrent }>
         {dataArr?.length & isCurrent ? 
         <div>
           { dataArr?.map(e => (
@@ -34,6 +36,7 @@ export default function SprntBalcCard({ title, isCurrent,sprint, openMadal, data
           }
          </div>:""
         }
+        </Collapse>
 
     </div>
   )

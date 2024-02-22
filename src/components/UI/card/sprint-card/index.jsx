@@ -63,7 +63,10 @@ export default function SprintCard({
                           }
                           <p
                               className={cls.SprintCard__exercises__title}
-                              onClick={() => router.push(`/dashboard/lesson/${e?.id}/vidoe`)}>{step}.{e?.step}  {e?.title}</p>
+                              onClick={() => {
+                                router.push(`/dashboard/lesson/${e?.id}/vidoe?sprint=${step}&lesson=${e?.step}`)
+                                
+                              }}>{step}.{e?.step}  {e?.title}</p>
                       </div>
                       <div className={cls.SprintCard__exercises__flex1}>
                           <div className={cls.SprintCard__exercises__btn}>

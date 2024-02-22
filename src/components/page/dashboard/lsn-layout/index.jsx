@@ -5,7 +5,7 @@ import {useState} from "react"
 import { useParams } from 'next/navigation'
 import cls from './lesson.module.scss'
 import LessonMadal from '@/components/UI/madal/lesson-madal'
-
+import { useSearchParams } from 'next/navigation'
 const lessonArr = [
   {
     id: 1,
@@ -75,13 +75,14 @@ const lessonArr = [
 export default function LassonLoayout({data, children }) {
   const {id} = useParams()
   const [openMadl, setOpenMal] = useState(false)
+  const searchParams = useSearchParams()
   return (
     <div className={cls.LassonLoayout}>
       <div className={cls.LassonLoayout__content}>
         <DashboardHeader
           OpenMadal={()=> setOpenMal(true)}
           sprintId={id}
-          currentLesson={`Sprint 1 · Lesson 1`}
+          currentLesson={`Sprint ${searchParams.get("sprint")}  · Lesson ${searchParams.get("lesson")}`}
         />
       {children}
       </div>

@@ -2,7 +2,7 @@ import DashboardHomePage from "@/components/page/dashboard/home";
 import axios_init from "@/utils/axios_init";
 
 async function getData() {
-  const res = await axios_init.get('/course/detail/1/')
+  const res = await axios_init.get('/course/main-course/')
   return res
 }
 

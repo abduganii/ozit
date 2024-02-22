@@ -10,10 +10,10 @@ export default function LessonMadal({ lessonArr, close }) {
     <div className={cls.LessonMadal}>
         <div className={cls.LessonMadal__content}>
             <div className={cls.LessonMadal__top}>
-                  <div className={cls.LessonMadal__top__left}>
+                  {/* <div className={cls.LessonMadal__top__left}>
                       <p>Sprint 1 · Lesson 1</p>
                       <div><DownBlackIcons/></div>
-                  </div>
+                  </div> */}
                   <div className={cls.LessonMadal__top__delete}  onClick={close}><DeleteIcons color={"white"}/></div>
             </div> 
 

@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { DownIcons } from "../icon"
 import cls from "./dashbars.module.scss"
-
+import { useSearchParams } from 'next/navigation'
 const navbarArr = [{
   id: 1,
   text: "Video",
@@ -22,18 +22,20 @@ const navbarArr = [{
   text: "Exercises",
   link: "/dashboard/lesson/",
   secondLink:"/exercises"
-}
+  }
+
 ]
 export default function DashboardHeader({ currentLesson ,OpenMadal,sprintId}) {
   const pathName = usePathname()
-  const [left,setleft] = useState(0)
-   
+  const [left, setleft] = useState(0)
+  const searchParams = useSearchParams()
+
   return (
     <header className={cls.DashboardHeader}>
       {navbarArr &&<ul className={cls.DashboardHeader__navBar}>
         {navbarArr?.map((e,i) => (
           <li  className={cls.DashboardHeader__navBar__item}
-            key={e?.id}><Link className={`${cls.DashboardHeader__navBar__list}`} onClick={()=>setleft(i * 90.6)} href={`${e?.link}${sprintId}${e?.secondLink}`}>{e?.text}</Link></li>
+            key={e?.id}><Link className={`${cls.DashboardHeader__navBar__list}`} onClick={()=>setleft(i * 90.6)} href={`${e?.link}${sprintId}${e?.secondLink}?sprint=${searchParams.get("sprint")}&lesson=${searchParams.get("lesson")}`}>{e?.text}</Link></li>
       ))}
       <div className={cls.DashboardHeader__navBar__animatin} style={{left:left+3}}></div>
       </ul>}

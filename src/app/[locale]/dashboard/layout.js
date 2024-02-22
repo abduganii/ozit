@@ -16,7 +16,6 @@ async function getMe() {
 export default async function layout({ children }) {
     const token = cookies().get("token")
     const user = await getMe()
-    console.log(user)
     const session = await getServerSession(authOptions);
     return (
         <AuthLayout token={token}>

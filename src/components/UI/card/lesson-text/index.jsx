@@ -1,6 +1,6 @@
 import cls from './lestext.module.scss'
 
-export default function LessonTextCard({title,text,level,levelColor,border,required,...other}) {
+export default function LessonTextCard({title,text,level,lecture,levelColor,border,required,...other}) {
     const hexToRgb = (hex) => {
         hex = hex.replace(/^#/, '');
       
@@ -22,7 +22,8 @@ export default function LessonTextCard({title,text,level,levelColor,border,requi
               </div>
               {level && <button className={cls.LessonTextCard__top__btn} style={{color:levelColor,backgroundColor: `rgba(${hexToRgb(levelColor)}, ${.2})`}}>{level}</button>}
           </div> 
-          <p className={cls.LessonTextCard__text}>{text}</p>
+         {text&& <p className={cls.LessonTextCard__text}>{text}</p>}
+        { lecture ? <p dangerouslySetInnerHTML={{ __html: lecture}} /> : null}
     </div>
   )
 }
