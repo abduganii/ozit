@@ -5,13 +5,13 @@ import { getServerSession } from "next-auth";
 import { cookies } from "next/headers";
 import NextTopLoader from 'nextjs-toploader';
 async function getMe() {
-    // const res = await axios_init.get('/accounts/me')
-    const res = await fetch('https://api-uzit.kebyo.me/api/v1/accounts/me')
+    const res = await axios_init.get('/accounts/me')
+    // const res = await fetch('https://api-uzit.kebyo.me/api/v1/accounts/me')
     console.log(res)
     if (!res.ok) {
-       console.log(res.status)
+    //    console.log(res.status)
    }
-    return res.json()
+    return res
   }
 export default async function layout({ children }) {
     const token = cookies().get("token")

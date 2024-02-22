@@ -9,7 +9,7 @@ export default function BlogsCard({ img, title,id, date ,...other}) {
     let Minutes = createAt.getMinutes();
 
     const weeksDay = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    
+  
     return (
         
         <div className={cls.BlogsCard} {...other} onClick={()=>router.push(`/home/blog/${id}`)}>

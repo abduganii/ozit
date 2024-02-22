@@ -45,7 +45,7 @@ export default function SprintCard({
                               e?.duration && e?.duration < 100 &&  <Progress
                                   type="circle"
                                   trailColor="#e6f4ff"
-                                  percent={e?.duration}
+                                  percent={e?.progress_percent}
                                   strokeWidth={14}
                                   size={24}
                                   format={() => null}
@@ -55,7 +55,7 @@ export default function SprintCard({
                               e?.duration && e?.duration == 100 &&  <Progress
                                   type="circle"
                                   trailColor="#e6f4ff"
-                                  percent={e?.duration}
+                                  percent={e?.progress_percent}
                                   strokeWidth={14}
                                   size={24}
                                   format={() => null}

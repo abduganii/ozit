@@ -7,10 +7,10 @@ async function getData() {
   return res 
 }
 
-export default async function layout({ children }) {
+export default async function layout({ children}) {
   const data = await getData()
   return (
-    <LassonLoayout data={data}>
+    <LassonLoayout data={data} >
       {children}
     </LassonLoayout>
   )

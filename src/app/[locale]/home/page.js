@@ -14,6 +14,9 @@ async function getCurriculum() {
 async function getBlogs() {
   return await axios_init.get(`/common/posts`)
 }
+async function getFaq() {
+  return await axios_init.get(`/common/posts`)
+}
 export default async function Home({ params: { locale } }) {
   const Curriculum = await getCurriculum()
   const Blogs = await getBlogs()

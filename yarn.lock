@@ -431,6 +431,11 @@
   dependencies:
     tslib "^2.4.0"
 
+"@types/cookie@^0.5.1":
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.5.4.tgz#7e70a20cd695bc48d46b08c2505874cd68b760e0"
+  integrity sha512-7z/eR6O859gyWIAjuvBWFzNURmf2oPBmJlfVWkwehU5nzIyjwBsTh7WMmEEV4JFnHuQ3ex4oyTvfKzcyJVDBNA==
+
 "@types/lodash.memoize@^4.1.7":
   version "4.1.9"
   resolved "https://registry.yarnpkg.com/@types/lodash.memoize/-/lodash.memoize-4.1.9.tgz#9f8912d39b6e450c0d342a2b74c99d331bf2016b"
@@ -794,6 +799,11 @@ convert-source-map@^1.5.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.9.0.tgz#7faae62353fb4213366d0ca98358d22e8368b05f"
   integrity sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==
+
+cookie@^0.4.1:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.2.tgz#0e41f24de5ecf317947c82fc789e06a884824432"
+  integrity sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==
 
 cookie@^0.5.0:
   version "0.5.0"
@@ -1333,6 +1343,14 @@ next-i18n-router@^5.0.2:
   dependencies:
     "@formatjs/intl-localematcher" "^0.5.2"
     negotiator "^0.6.3"
+
+next-universal-cookie@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/next-universal-cookie/-/next-universal-cookie-3.1.0.tgz#1dd4580a4be71d9a3e04c99d6bbc58378d81e62e"
+  integrity sha512-Ril3ASGkrnlNFYW5kIJVtUOFweLje75SDS9+hfz9VcGUxPVdASeTRoza9d6Z5dxNNaRBLKcfcUb479n0foiKlA==
+  dependencies:
+    "@types/cookie" "^0.5.1"
+    cookie "^0.4.1"
 
 next@^14.0.4:
   version "14.1.0"

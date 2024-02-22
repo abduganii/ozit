@@ -23,6 +23,7 @@
     "next": "^14.0.4",
     "next-auth": "^4.24.5",
     "next-i18n-router": "^5.0.2",
+    "next-universal-cookie": "^3.1.0",
     "nextjs-toploader": "^1.6.6",
     "qs": "^6.11.2",
     "react": "^18.2.0",

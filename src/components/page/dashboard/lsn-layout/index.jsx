@@ -2,10 +2,11 @@
 import DashboardHeader from '@/components/UI/dashboard-header'
 import Image from 'next/image'
 import {useState} from "react"
-import { useParams } from 'next/navigation'
+import { useParams, usePathname ,useRouter} from 'next/navigation'
 import cls from './lesson.module.scss'
 import LessonMadal from '@/components/UI/madal/lesson-madal'
 import { useSearchParams } from 'next/navigation'
+
 const lessonArr = [
   {
     id: 1,
@@ -72,18 +73,29 @@ const lessonArr = [
   }
 ]
 
-export default function LassonLoayout({data, children }) {
-  const {id} = useParams()
+export default function LassonLoayout({data, children}) {
+  const {id,exercisesid} = useParams()
   const [openMadl, setOpenMal] = useState(false)
   const searchParams = useSearchParams()
+  const usepathname = usePathname()
+  const router = useRouter()
+  // /dashboard/lesson/3/vidoe?sprint=2&lesson=1
   return (
     <div className={cls.LassonLoayout}>
       <div className={cls.LassonLoayout__content}>
-        <DashboardHeader
+       { !usepathname.includes("/dashboard/lesson/3/exercises/") ? <DashboardHeader
           OpenMadal={()=> setOpenMal(true)}
           sprintId={id}
           currentLesson={`Sprint ${searchParams.get("sprint")}  · Lesson ${searchParams.get("lesson")}`}
-        />
+        /> : <div className={cls.LassonLoayout__pathName}>
+            <span onClick={()=>router.push('/dashboard/home')}> Doshboard </span>
+            <span  onClick={()=>router.push('/dashboard/home')} >/ Sprint {searchParams.get("sprint")} </span>
+            <span
+              onClick={() => router.push(`/dashboard/lesson/${id}/vidoe?sprint=${searchParams.get("sprint")}&lesson=${searchParams.get("lesson")}`)}>
+              / Lesson {searchParams.get("lesson")}
+            </span>
+            <span>/ Exercises {Number(exercisesid) + 1 } </span> 
+        </div>}
       {children}
       </div>
       <div className={cls.LassonLoayout__right}>

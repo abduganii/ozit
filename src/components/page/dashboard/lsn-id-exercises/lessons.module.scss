@@ -1,0 +1,54 @@
+.LassonPage {
+    width: 100%;
+
+
+    width: 100%;
+    border-radius: 16px;
+    background: #FFF;
+
+    padding-right: 5px;
+    padding-top: 15px;
+
+    &__wrap {
+        padding: 24px;
+        height: calc(100vh - 88px);
+        overflow: scroll;
+        display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+
+
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #fff;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgba(8, 18, 38, 0.07);
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba(8, 18, 38, 0.10);
+        }
+    }
+
+
+
+
+    &__hint {
+
+        text-align: center;
+        width: 80px;
+        border-radius: 4px;
+        padding: 2px;
+        background-color: rgb(228, 228, 228);
+        cursor: pointer;
+    }
+}

@@ -2,23 +2,13 @@ import axios from 'axios'
 import qs from 'qs'
 import 'dotenv/config'
 import Cookies from 'js-cookie';
+// import { cookies } from 'next/headers';
 
 const baseUrl = process.env.NEXT_BASE_URL
 function unauthorized(msg) {
     console.error('unauthorized', msg)
 }
 
-function ErrorHandler(error) {
-    if (error.message.startsWith('timeout')) {
-        console.error('timeout to server')
-    }
-    if (error.message.startsWith('Network Error')) {
-        console.error('Network Error')
-    }
-    if (error.response) {
-        console.log('error.response', error.response)
-    }
-}
 
 export default {
     request(method, url, params, data) {
@@ -28,11 +18,12 @@ export default {
             url: url,
             method: method
         }
-        const token = Cookies.get('token')
+        // const token =cookies().get('token')
         
-        if (token) {
+        // console.log(token)
+        if (true) {
             config.headers = {
-                Authorization: 'Bearer ' + token,
+                Authorization: 'Bearer ' + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NzAxNDE3LCJpYXQiOjE3MDg2MTUwMTcsImp0aSI6IjA0MzkzYzcwZWU0NzQwMTZhMGVmYThjOTM5ZDM5N2E5IiwidXNlcl9pZCI6M30.z85uVBm0YmE-RQ3MyaZdXafD_IVrZD_zQoYiBVU9i4M",
             }
         }
         if (data) config.data = data
