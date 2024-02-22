@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d756cb2a-2781-4e4e-8d19-3c96735d90f8" name="Changes" comment="auth bug fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/home/curriculum/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/home/curriculum/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/card/language-card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/card/language-card/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/curriculum/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/curriculum/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/home/components/program/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/home/components/program/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/home/about-us/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/home/about-us/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/home/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/home/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/about-us/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/about-us/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/home/components/faq/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/home/components/faq/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/page/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/home/home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

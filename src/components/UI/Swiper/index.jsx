@@ -21,7 +21,7 @@ export default  function SwiperWithScrollIcons({ children,slidesPerView}) {
         className={cls.container}
         // loop={true}
         onSwiper={(e) => setSwiper(e)}
-        onSlideChange={() => console.log('slide change')}
+        // onSlideChange={() => console.log('slide change')}
     >
         {React.Children.map(children, (child, index) => (
           <SwiperSlide key={index}>{child}</SwiperSlide>

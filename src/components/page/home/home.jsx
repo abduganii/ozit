@@ -19,7 +19,7 @@ import SwiperWithScrollIcons from "@/components/UI/Swiper";
 import VimeoPlayer from "@/components/UI/vimeo";
 import VidoeHomeCard from "./components/vidoe-card";
 
-export default async function HomePage({ lang ,Curriculum, Blogs}) {
+export default async function HomePage({ lang ,Curriculum, Blogs, Faqs}) {
 
     return (
         <main>
@@ -211,7 +211,7 @@ export default async function HomePage({ lang ,Curriculum, Blogs}) {
               </SwiperWithScrollIcons>
             </Container>
             <Container style={{marginTop:"146px"}}>
-             <Faq  />
+             <Faq  faqs={Faqs}/>
                 
              </Container>
 
