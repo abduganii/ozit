@@ -4,21 +4,34 @@ import axios_init from "@/utils/axios_init";
 import { getServerSession } from "next-auth";
 import { cookies } from "next/headers";
 import NextTopLoader from 'nextjs-toploader';
+ 
 async function getMe() {
-    const res = await axios_init.get('/accounts/me')
-    // const res = await fetch('https://api-uzit.kebyo.me/api/v1/accounts/me')
-    console.log(res)
-    if (!res.ok) {
-    //    console.log(res.status)
-   }
-    return res
+    // const res = await axios_init.get('/accounts/me')
+    const token = cookies().get("token")
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/accounts/me`,{
+      credentials:"include",
+      headers:{
+        Authorization: 'Bearer ' + token.value,
+      }
+    })
+  
+  if (!res.ok) {
+    console.log("erro")
+    if (res.status == 401) {
+      return res.status
+    }
+  }
+    return res.json()
   }
 export default async function layout({ children }) {
-    const token = cookies().get("token")
-    const user = await getMe()
+
+  const token = cookies().get("token")
+  const user = await getMe()
+
+
     const session = await getServerSession(authOptions);
     return (
-        <AuthLayout token={token}>
+        <AuthLayout user={user} >
             <NextTopLoader
             color="#2299DD"
             initialPosition={0.08}

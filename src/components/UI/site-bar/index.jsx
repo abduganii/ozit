@@ -32,11 +32,11 @@ const arr = [
         link: "/home/price"
     },
   
-    // {
-    //     id: 5,
-    //     text: "Contact us",
-    //     link: "/contact"
-    // }
+    {
+        id: 5,
+        text: "Contact us",
+        link: "/home/contact-us"
+    }
 ]
 export default function SiteBar({windowHeight}) {
     const pathName = usePathname()

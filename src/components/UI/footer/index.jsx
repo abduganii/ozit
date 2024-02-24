@@ -15,7 +15,7 @@ export default function Footer() {
             {
               !params.includes('/auth/login')?  <footer className={cls.Footer}>
             {
-                !params.includes('/blog/') &&  !params.includes('/consultation')  ?  <div className={cls.Footer__top}>
+                !params.includes('/blog/') &&  !params.includes('/consultation')  &&  !params.includes('/contact-us') ?  <div className={cls.Footer__top}>
                 <h3 className={cls.Footer__top__title}>
                     Попробуйте любой формат курса бесплатно — выбрать один-единственный можно позже
                 </h3>

@@ -4,12 +4,12 @@ export const authOptions = {
     secret: process.env.NEXTAUTH_SECRET,
     providers: [
         GoogleProvider({
-            clientId: '696542554767-mp57vtft14gq1df24p4mcrool8ki78rd.apps.googleusercontent.com',
-            clientSecret: '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'
+            clientId: process.env.NEXT_PUBLIC_GOOGLE_ID,
+            clientSecret: process.env.NEXT_PUBLIC_GOOGLE_SECRET
         }),
         Github({
-            clientId: '69148f5c7fef7d196420',
-            clientSecret: 'be92f44605ee585997e54a376ca3d62f390d9c68'
+            clientId: process.env.NEXT_PUBLIC_GITHUB_ID,
+            clientSecret: process.env.NEXT_PUBLIC_GITHUB_SECRET,
         })
     ],
     callbacks: {

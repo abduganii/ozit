@@ -1,29 +1,25 @@
 import axios from 'axios'
 import qs from 'qs'
 import 'dotenv/config'
-import Cookies from 'js-cookie';
-// import { cookies } from 'next/headers';
+import { getCookie } from "cookies-next";
 
-const baseUrl = process.env.NEXT_BASE_URL
 function unauthorized(msg) {
     console.error('unauthorized', msg)
 }
 
-
 export default {
     request(method, url, params, data) {
         const config = {
-            baseURL: 'https://api-uzit.kebyo.me/api/v1',
+            baseURL: process.env.NEXT_PUBLIC_URL,
             timeout: 120000,
             url: url,
             method: method
         }
-        // const token =cookies().get('token')
+        const token = getCookie("token");
         
-        // console.log(token)
-        if (true) {
+        if (token) {
             config.headers = {
-                Authorization: 'Bearer ' + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NzAxNDE3LCJpYXQiOjE3MDg2MTUwMTcsImp0aSI6IjA0MzkzYzcwZWU0NzQwMTZhMGVmYThjOTM5ZDM5N2E5IiwidXNlcl9pZCI6M30.z85uVBm0YmE-RQ3MyaZdXafD_IVrZD_zQoYiBVU9i4M",
+                Authorization: 'Bearer ' + token,
             }
         }
         if (data) config.data = data
@@ -43,7 +39,8 @@ export default {
                     resolve(res.data)
                 })
                 .catch((error) => {
-                    ErrorHandler(error)
+                    
+                    // ErrorHandler(error)
                     reject(error)
                 })
         })

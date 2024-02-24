@@ -13,14 +13,14 @@ export default function GooglePage({ session }) {
           const login = await axios_init.post('/accounts/google/', {
               user_token: session['id_token'],
           })      
-      
           if (login?.status == "active") {
             Cookies.set('token',login.tokens.access)
             router.push('/dashboard/home')
           } else if (login?.status == "created") {
-            Cookies.set('token', login.tokens.access)
-            router.push('/auth/login?opnemadal=1')
+              Cookies.set('token', login.tokens.access)
+              router.push('/auth/login?opnemadal=1')
           }
+      
         }
         if (!token &&session && session['id_token']) {
             logIn()
