@@ -1,10 +1,15 @@
 import LassonLoayout from '@/components/page/dashboard/lsn-layout'
-import axios_init from '@/utils/axios_init'
+import { cookies } from 'next/headers'
 import React from 'react'
 
 async function getData() {
-  const res = await axios_init.get('/course/detail/1/')
-  return res 
+  // const res = await axios_init.get('/course/detail/1/')
+  const token = cookies().get("token")
+  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/course/main-course/`,{
+    credentials:"include",
+    headers: { Authorization: 'Bearer ' + token?.value || "" }
+  })
+  return res.json()
 }
 
 export default async function layout({ children}) {

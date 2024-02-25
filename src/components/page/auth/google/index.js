@@ -24,6 +24,8 @@ export default function GooglePage({ session }) {
         }
         if (!token &&session && session['id_token']) {
             logIn()
+        } else {
+          router.push('/auth/login')
         }
     }, [])
   return (

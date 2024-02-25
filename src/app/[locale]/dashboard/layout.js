@@ -6,22 +6,19 @@ import { cookies } from "next/headers";
 import NextTopLoader from 'nextjs-toploader';
  
 async function getMe() {
-    // const res = await axios_init.get('/accounts/me')
     const token = cookies().get("token")
     const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/accounts/me`,{
       credentials:"include",
-      headers:{
-        Authorization: 'Bearer ' + token.value,
-      }
+      headers: { Authorization: 'Bearer ' + token?.value || "" }
     })
   
   if (!res.ok) {
-    console.log("erro")
     if (res.status == 401) {
       return res.status
     }
   }
     return res.json()
+
   }
 export default async function layout({ children }) {
 

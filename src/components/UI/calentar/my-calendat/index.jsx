@@ -16,12 +16,12 @@ function MyCalendar() {
   const handleDateClick = (value, event) => {
     // Use the 'value' parameter to get the clicked date
     setSelectedDate(value);
-    console.log('Date clicked:', value);
+    // console.log('Date clicked:', value);
   };
 
   const handleDoubleDateClick = (value, event) => {
     // Use the 'value' parameter to get the double-clicked date
-    console.log('Date double-clicked:', value);
+    // console.log('Date double-clicked:', value);
   };
 
   const clearSelectedDate = () => {

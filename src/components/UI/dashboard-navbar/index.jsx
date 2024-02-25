@@ -33,7 +33,7 @@ export default function DashboardNavabr() {
       setlogout(false)
         await signOut('google')
         Cookies.remove('token')
-        router.refresh();
+        router.push('/home')
     }
   
   return (

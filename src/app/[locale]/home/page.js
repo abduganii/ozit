@@ -14,12 +14,14 @@ async function getCurriculum() {
 async function getBlogs() {
   return await axios_init.get(`/common/posts`)
 }
-async function getFaq() {
-  return await axios_init.get(`/common/posts`)
+async function getFaqs() {
+  return await axios_init.get(`/common/faq`)
 }
 export default async function Home({ params: { locale } }) {
   const Curriculum = await getCurriculum()
   const Blogs = await getBlogs()
+    const Faqs = await getFaqs()
+  // console.log('Faqs', Faqs)
   
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
  
@@ -32,6 +34,7 @@ export default async function Home({ params: { locale } }) {
         lang={locale}
         Curriculum={Curriculum}
         Blogs={Blogs}
+        Faqs={Faqs}
       />
     </TranslationsProvider>
     

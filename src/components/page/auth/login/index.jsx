@@ -32,6 +32,7 @@ export default function LoginPage() {
   }
   
   const ConfirmPhone = async (data) => {
+    setLoader(true)
     await axios_init.post('/accounts/confirm/phone-number/', {
       code:data.code,
       phone_number: data.phone_number.replaceAll("-", "").replaceAll(" ", ""),

@@ -11,7 +11,7 @@ import { InfoCardArr} from "../data";
 import Help from '../home/components/help';
 import cls from './aboutUs.module.scss';
 // Cosmic.jpg
-export default function AboutUsPage() {
+export default function AboutUsPage({ teams }) {
   const [startVidoe,setStartVidoe] = useState(false)
   const [startVidoe1,setStartVidoe1] = useState(false)
   return (
@@ -63,12 +63,22 @@ export default function AboutUsPage() {
           <Container>
           <h3 className={cls.AboutUsPage__title}>Meet the team</h3>
           <SwiperWithScrollIcons slidesPerView={3}>
+              {
+                teams?.map(e => (
+                  <TeamCard
+                    key={e?.id}
+                    name={e?.full_name}
+                    position={e?.position}
+                    bagImage={e?.image}
+                  />
+                ))
+              }
           
-              <TeamCard name={"Alexandra Santos"} position={ "Ceo"} />
-              <TeamCard name={"Alexandra Santos"} position={ "Ceo"} />
-              <TeamCard name={"Alexandra Santos"} position={ "Ceo"} />
-              <TeamCard name={"Alexandra Santos"} position={ "Ceo"} />
-              <TeamCard name={"Alexandra Santos"} position={ "Ceo"} />
+              {/*<TeamCard name={"Alexandra Santos"} position={ "Ceo"} />*/}
+              {/*<TeamCard name={"Alexandra Santos"} position={ "Ceo"} />*/}
+              {/*<TeamCard name={"Alexandra Santos"} position={ "Ceo"} />*/}
+              {/*<TeamCard name={"Alexandra Santos"} position={ "Ceo"} />*/}
+              {/*<TeamCard name={"Alexandra Santos"} position={ "Ceo"} />*/}
           </SwiperWithScrollIcons>
             <h3 className={cls.AboutUsPage__title}>Our mission</h3>
               <div className={cls.AboutUsPage__flex}>

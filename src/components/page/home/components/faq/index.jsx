@@ -28,7 +28,7 @@ const faqArr = [
         text: "For those who doubt, we have designed a free part that will help you get an answer to this question. If you are convinced that the chosen profession does not suit you - this is also a positive result."
     }
 ]
-export default function Faq() {
+export default function Faq({ faqs }) {
     const [faqId, setfaqId] = useState(false)
     return (
         <div className={cls.Faq} id='faq'>
@@ -42,12 +42,12 @@ export default function Faq() {
                 <BlueBtn className={cls.Faq__btn}>Write us</BlueBtn>
             </div>
 
-            {faqArr && <ul className={cls.Faq__list}>
-                {faqArr?.map(e => (
+            {faqs && <ul className={cls.Faq__list}>
+                {faqs?.map(e => (
                     <li className={`${cls.Faq__item} ${faqId == e?.id ? cls.Faq__itemActive : ""}`} key={e?.id} onClick={() => setfaqId(state => state == e?.id ? false : e?.id)}>
                         <div><h4>{e?.title}</h4> <PlusIcons /> </div>
                         <Collapse isOpened={faqId}>
-                            {faqId == e?.id ? <p> {e?.text}</p> : ""}
+                            {faqId == e?.id ? <p> {e?.body}</p> : ""}
                         </Collapse>
 
                     </li>
