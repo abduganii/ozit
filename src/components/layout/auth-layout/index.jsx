@@ -21,7 +21,7 @@ export default  function AuthLayout(props) {
     return (
         <>
         <div className={cls.AuthLayout}>
-            <DashboardNavabr/>
+            <DashboardNavabr user={props.user}/>
             {props.children}
         </div>
         </>

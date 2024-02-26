@@ -17,7 +17,7 @@ import Loader from '../loader'
 
 
 
-export default function DashboardNavabr() {
+export default function DashboardNavabr({user}) {
   const [loader,setLoader] = useState(false)
   const pathname = usePathname()
   const [openMadal, setOpenMadal] = useState(false)
@@ -35,7 +35,7 @@ export default function DashboardNavabr() {
         Cookies.remove('token')
         router.push('/home')
     }
-  
+  console.log(user)
   return (
     <div className={cls.DashboardNavabr}>
       <Link className={cls.DashboardNavabr__logo} href={'/dashboard/home'}>
@@ -46,7 +46,7 @@ export default function DashboardNavabr() {
          <div className={cls.DashboardNavabr__nav__fly} onClick={()=>setSubscription(true)}><FlyIcons /></div>
         <div className={cls.DashboardNavabr__profile} onClick={()=>setOpenMadal(true)}>
           <Image
-            src={'/Home/Profile.svg'}
+            src={user?.profile_image? user?.profile_image :'/Home/profile.jpg'}
             alt={"img"}
             width ={40}
             height ={40}
@@ -55,8 +55,8 @@ export default function DashboardNavabr() {
       </div>
       {openMadal ? <>
         <SettingMadal
-        name={"Alex Mayekovski"}
-          email={"name@gmail.com"}
+        name={user?.full_name}
+          email={user?.email}
           editprofile={() => {
             setOpenProfle(true)
             setOpenMadal(false)
